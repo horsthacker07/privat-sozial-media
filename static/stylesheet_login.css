@@ -5,7 +5,7 @@ body {
     min-height: 100vh; /* Stellt sicher, dass der Body die gesamte Höhe des Viewports einnimmt */
     font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
     text-align: center;
-    background: linear-gradient(to bottom, rgb(200, 200, 255), rgb(50, 50, 255)); /* Farbverlauf von oben nach unten */
+    background: linear-gradient(to bottom, rgb(201, 180, 219),rgb(102, 93, 110)); /* Farbverlauf von oben nach unten */
 }
 
 .title, .subtitle, .subsubtitle, .main_body {
@@ -24,7 +24,7 @@ body {
 
 .main_body button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* Grüner Hintergrund */
+    background-color: #a9d2d599; /* Grüner Hintergrund */
     color: white; /* Weißer Text */
     border: none;
     border-radius: 5px; /* Abgerundete Ecken */
@@ -34,19 +34,20 @@ body {
 }
 
 .main_body input:hover {
-    background-color:#ffffff67;
+    background-color:#c8e2e499;
+    color: white;
 }
 
 .main_body button:hover {
-    background-color: #467a48; /* Dunkleres Grün beim Hover */
+    background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
 }
 
 .footer {
     margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
-    background-color: #f2f2f2; /* Optional: Hintergrundfarbe für den Footer */
+    background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
     padding: 10px; /* Optional: Innenabstand für den Footer */
-    border-top: 5px solid #ccc; /* Optional: Trennlinie oben */
+    border-top: 5px solid #434b4c; /* Optional: Trennlinie oben */
     font-size: 13px;
-    color: #555;
+    color: #ffffff;
 }
