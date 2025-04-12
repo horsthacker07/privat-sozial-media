@@ -24,7 +24,7 @@ body {
 
 .main_body button {
     padding: 10px 20px;
-    background-color: #634e7e; /* Grüner Hintergrund */
+    background-color: #a9d2d599; /* Grüner Hintergrund */
     color: white; /* Weißer Text */
     border: none;
     border-radius: 5px; /* Abgerundete Ecken */
@@ -34,12 +34,12 @@ body {
 }
 
 .main_body input:hover {
-    background-color:#453659;
+    background-color:#c8e2e499;
     color: white;
 }
 
 .main_body button:hover {
-    background-color: #453659; /* Dunkleres Grün beim Hover */
+    background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
 }
 
 .footer {
