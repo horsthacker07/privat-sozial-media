@@ -4,7 +4,7 @@ app = Flask(__name__)
 app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 
 # Fesetgelegtes Passwort
-PASSWWORD = "secret_password"
+PASSWORD = "secret_password"
 
 @app.route('/')
 def root():
