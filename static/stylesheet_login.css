@@ -22,7 +22,7 @@ body {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
 }
 
-.main_body button {
+.main_body button[type="submit"] {
     padding: 10px 20px;
     background-color: #a9d2d599; /* Grüner Hintergrund */
     color: white; /* Weißer Text */
@@ -33,12 +33,12 @@ body {
     transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
 }
 
-.main_body input:hover {
+.main_body input[type="password"]:hover {
     background-color:#c8e2e499;
     color: white;
 }
 
-.main_body button:hover {
+.main_body button[type="submit"]:hover {
     background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
 }
 
