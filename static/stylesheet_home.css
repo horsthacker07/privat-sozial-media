@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 100vh; /* Stellt sicher, dass der Body die gesamte Höhe des Viewports einnimmt */
     font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
     text-align: center;
