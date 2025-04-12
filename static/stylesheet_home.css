@@ -43,6 +43,26 @@ body {
     color: #566161; /* Grüner Text beim Hover */
 }
 
+.body div[type="content"] {
+    float: left; /* Nimmt den verfügbaren Platz ein */
+    display: flex;
+    flex-direction: column; /* Stellt sicher, dass die Kinder vertikal angeordnet sind */
+    justify-content: center; /* Zentriert den Inhalt vertikal */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    padding: 20px; /* Innenabstand */
+}
+
+.body div[type="messages"] {
+    float: right; /* Nimmt den verfügbaren Platz ein */
+    background-color: #f9f9f9; /* Heller Hintergrund für den Nachrichtenbereich */
+    border: 1px solid #ccc; /* Grauer Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
+    width: 80%; /* Breite des Nachrichtenbereichs */
+    max-width: 600px; /* Maximale Breite */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
 .body input[type="text"] {
     width: 50%;
     padding: 10px;
