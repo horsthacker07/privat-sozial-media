@@ -8,6 +8,7 @@ body {
 }
 
 .navbar {
+    position: relative; /* Ermöglicht die absolute Positionierung von Kindern */
     display: flex;
     justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
     align-items: center; /* Vertikale Zentrierung */
@@ -26,6 +27,7 @@ body {
 }
 
 .logout-link {
+    margin-left: auto; /* Schiebt den Logout-Link nach rechts */
     color: white; /* Weißer Text */
     text-decoration: none; /* Entfernt die Unterstreichung */
     font-size: 16px; /* Schriftgröße */
