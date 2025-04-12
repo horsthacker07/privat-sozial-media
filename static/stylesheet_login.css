@@ -33,6 +33,10 @@ body {
     transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
 }
 
+.main_body input:hover {
+    background_color:#467a48;
+}
+
 .main_body button:hover {
     background-color: #467a48; /* Dunkleres Grün beim Hover */
 }
