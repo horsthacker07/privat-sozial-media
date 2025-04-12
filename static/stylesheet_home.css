@@ -43,6 +43,36 @@ body {
     color: #566161; /* Grüner Text beim Hover */
 }
 
+.body input[type="input"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
+}
+
+.body input:hover {
+    background-color: #c8e2e499; /* Hellerer Hintergrund beim Hover */
+    color: white; /* Weißer Text */
+}
+
+.body button[type="button"] {
+    padding: 10px 20px;
+    background-color: #a9d2d599; /* Grüner Hintergrund */
+    color: white; /* Weißer Text */
+    border: none;
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
+}
+
+.button:hover {
+    background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
+}
+
 .footer {
     margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
