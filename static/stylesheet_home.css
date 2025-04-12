@@ -1,7 +1,16 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Stellt sicher, dass der Body die gesamte Höhe des Viewports einnimmt */
+}
+
 .footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+    margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
+    background-color: #f2f2f2; /* Optional: Hintergrundfarbe für den Footer */
+    text-align: center; /* Zentriert den Text im Footer */
+    padding: 10px; /* Optional: Innenabstand für den Footer */
+    border-top: 1px solid #ccc; /* Optional: Trennlinie oben */
     font-size: 14px;
     color: #555;
-  }
+}
