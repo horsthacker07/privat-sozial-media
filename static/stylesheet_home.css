@@ -7,6 +7,36 @@ body {
     text-align: center;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
+    align-items: center; /* Vertikale Zentrierung */
+    background-color: #4CAF50; /* Grüner Hintergrund */
+    color: white; /* Weißer Text */
+    padding: 10px 20px; /* Innenabstand */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 24px; /* Schriftgröße für die Überschrift */
+}
+
+.logout-link {
+    color: white; /* Weißer Text */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 16px; /* Schriftgröße */
+    padding: 5px 10px; /* Innenabstand */
+    border: 1px solid white; /* Weißer Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+}
+
+.logout-link:hover {
+    background-color: white; /* Weißer Hintergrund beim Hover */
+    color: #4CAF50; /* Grüner Text beim Hover */
+}
+
 .footer {
     margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
     background-color: #f2f2f2; /* Optional: Hintergrundfarbe für den Footer */
