@@ -1,22 +1,25 @@
-// Funktion, um die Benutzerliste zu laden
-async function loadMessanges() {
+// Funktion, um die Nachrichtenliste zu laden
+async function loadMessages() {
     try {
-        const response = await fetch('https://private-sozial-media.onrender.com/global_chat_db');
+        const response = await fetch('/global_chat_db'); // Relativer Endpunkt
         const data = await response.json();
 
-        const global_chat = document.getElementById('global_chat');
-        global_chat.innerHTML = ''; // Liste leeren
+        const chatList = document.getElementById('global_chat');
+        chatList.innerHTML = ''; // Liste leeren
 
-        // Benutzer in die Liste einfügen
-        data.global_chat.forEach(global_chat => {
+        // Nachrichten in die Liste einfügen
+        data.global_chat_db.forEach(message => {
             const listItem = document.createElement('li');
-            listItem.textContent = user.name; // message anzeigen
-            global_chat.appendChild(listItem);
+            listItem.textContent = message; // Nachricht anzeigen
+            chatList.appendChild(listItem);
         });
     } catch (error) {
-        console.error('Fehler beim Laden der messanges:', error);
+        console.error('Fehler beim Laden der Nachrichten:', error);
     }
 }
 
-// Benutzerliste beim Laden der Seite abrufen
-window.onload = loadMessanges;
+// Nachrichtenliste beim Laden der Seite abrufen
+window.onload = loadMessages;
+
+// Nachrichtenliste alle 5 Sekunden aktualisieren
+setInterval(loadMessages, 5000);
