@@ -20,8 +20,7 @@ def add_message():
     message = request.form.get('message', '').strip()
     if message:  # Nur hinzufügen, wenn die Nachricht nicht leer ist
         global_chat.append(message)
-        return jsonify(success=True, message="Message added"), 200
-    return jsonify(success=False, error="Message cannot be empty"), 400
+    return redirect(url_for('home'))  # Nach dem Senden auf die Home-Seite umleiten
 
 
 ### ab hier sind die Routen für home, login und logout ###

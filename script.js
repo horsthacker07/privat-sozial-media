@@ -20,3 +20,6 @@ async function loadMessages() {
 
 // Nachrichtenliste beim Laden der Seite abrufen
 window.onload = loadMessages;
+
+// Nachrichtenliste alle 5 Sekunden aktualisieren
+setInterval(loadMessages, 5000);
