@@ -5,7 +5,7 @@ body {
     min-height: 100vh; /* Stellt sicher, dass der Body die gesamte Höhe des Viewports einnimmt */
     font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
     text-align: center;
-    background: linear-gradient(to bottom, rgb(174,167,180),rgb(118,108,127)); /* Farbverlauf von oben nach unten */
+    background: linear-gradient(to bottom, rgb(201, 180, 219),rgb(102, 93, 110)); /* Farbverlauf von oben nach unten */
 }
 
 .navbar {
