@@ -34,6 +34,7 @@ async function sendMessage(event) {
             });
 
             if (response.ok) {
+                console.log('Message sent successfully'); // Debugging-Log
                 messageInput.value = ''; // Eingabefeld leeren
                 loadMessages(); // Nachrichtenliste aktualisieren
             } else {
@@ -42,6 +43,8 @@ async function sendMessage(event) {
         } catch (error) {
             console.error('Fehler beim Senden der Nachricht:', error);
         }
+    } else {
+        console.error('Message is empty'); // Debugging-Log
     }
 }
 
