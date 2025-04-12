@@ -13,7 +13,7 @@ body {
 }
 
 .main_body input[type="password"] {
-    width: 80%;
+    width: 50%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -34,7 +34,7 @@ body {
 }
 
 .main_body button:hover {
-    background-color: #45a049; /* Dunkleres Grün beim Hover */
+    background-color: #467a48; /* Dunkleres Grün beim Hover */
 }
 
 .footer {
