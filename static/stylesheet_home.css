@@ -18,6 +18,9 @@ body {
 }
 
 .navbar-title {
+    position: absolute;
+    left: 50%; /* Positioniert die Mitte des Titels */
+    transform: translateX(-50%); /* Verschiebt den Titel um die Hälfte seiner Breite */
     margin: 0;
     font-size: 24px; /* Schriftgröße für die Überschrift */
 }
