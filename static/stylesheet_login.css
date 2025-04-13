@@ -63,10 +63,6 @@ body {
     transition: bottom 0.3s ease; /* Weicher Übergang beim Einblenden */
 }
 
-body.body .footer {
-    bottom: 0; /* Zeigt den Footer an, wenn gescrollt wurde */
-}
-
 .footer a[type="footer-link"] {
     color: #c8b4e2; /* Weißer Text */
     text-decoration: none; /* Entfernt die Unterstreichung */
