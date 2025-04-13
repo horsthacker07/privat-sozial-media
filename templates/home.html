@@ -14,7 +14,7 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        var socket = io.connect('https://private-sozial-media.onrender.com:5000');
+        var socket = io.connect('https://private-sozial-media.onrender.com');
         socket.on('connect', function() {
             socket.send("User connected!");
         });
