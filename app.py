@@ -7,7 +7,7 @@ app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 APP_PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen lesen
 
 
-### ab hier sind die Routen für home, login und logout ###
+### ab hier sind die Routen ###
 
 @app.route('/')
 def root():
@@ -33,3 +33,7 @@ def home():
 def logout():
     session.clear()
     return redirect(url_for('root'))
+
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
