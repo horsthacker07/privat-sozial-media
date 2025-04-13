@@ -92,7 +92,7 @@ body {
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
     padding: 10px; /* Optional: Innenabstand für den Footer */
-    border-top: 1px solid #434b4c; /* Optional: Trennlinie oben */
+    border-top: 5px solid #434b4c; /* Optional: Trennlinie oben */
     font-size: 13px;
     color: #ffffff;
 }
