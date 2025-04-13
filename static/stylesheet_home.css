@@ -18,6 +18,7 @@ hr {
         text-align: left; /* Linksbündige Ausrichtung */
         left: 0; /* Setzt die Position auf 0 */
         transform: none; /* Entfernt die Verschiebung */
+        margin-left: 10px; /* Optional: Abstand vom linken Rand */
     }
 
     .body .navbar a[type="logout-link"] {
