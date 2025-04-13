@@ -57,6 +57,7 @@ body {
 
 .body .main_body p[type="cds"] {
     grid-area: cds; /* Weist den Bereich zu */
+    display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -67,6 +68,7 @@ body {
 
 .body .main_body p[type="td"] {
     grid-area: cds; /* Weist den Bereich zu */
+    display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -77,6 +79,7 @@ body {
 
 .body .main_body p[type="ur"] {
     grid-area: cds; /* Weist den Bereich zu */
+    display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -87,6 +90,7 @@ body {
 
 .body .main_body p[type="nc"] {
     grid-area: cds; /* Weist den Bereich zu */
+    display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -97,6 +101,7 @@ body {
 
 .body .main_body p[type="c"] {
     grid-area: cds; /* Weist den Bereich zu */
+    display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
