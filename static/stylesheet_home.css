@@ -72,6 +72,7 @@ hr {
 .body .main_body div[type="messages"] {
     grid-area: messages; /* Definiert den Bereich für die Nachrichten */
     display: flex; /* Flexbox für zentrierten Inhalt */
+    flex-direction: column; /* Vertikale Anordnung der Kinder */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
