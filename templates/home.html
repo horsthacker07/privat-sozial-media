@@ -36,6 +36,11 @@
                     console.log("gesendet!!!");
                 }
             });
+
+            $('#chatForm').on('submit', function(e) {
+                e.preventDefault(); // verhindert Seitenreload
+                $('#sendBtn').click(); // löst den bestehenden Button-Click-Handler aus
+            });
         });
     </script>
 
@@ -62,10 +67,10 @@
             <div id="messages_new">
             </div>
             
-            <form>
-                <input type="text" id="username" placeholder="Enter your username...">
-                <input type="text" id="message" placeholder="Enter your message here...">
-                <button id="sendBtn">SendMe</button>
+            <form id="chatForm">
+                <input type="text" id="username" placeholder="Enter your username..." required>
+                <input type="text" id="message" placeholder="Enter your message here..." required>
+                <button id="sendBtn">Send</button>
             </form>
             
         </div>
