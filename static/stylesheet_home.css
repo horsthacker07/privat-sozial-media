@@ -15,7 +15,7 @@ hr {
 @media screen and (max-width: 768px) {
     .body .navbar h1[type="navbar-title"] {
         font-size: 20px; /* Kleinere Schriftgröße auf mobilen Geräten */
-        left: auto; /* Entfernt die absolute Positionierung */
+        text-align: left; /* Linksbündige Ausrichtung */
         transform: none; /* Entfernt die Verschiebung */
     }
 
