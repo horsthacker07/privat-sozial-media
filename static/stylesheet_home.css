@@ -60,7 +60,7 @@ hr {
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
     grid-template-areas:
     "content messages"
-    "test messages"; /* Definiert die Bereiche */
+    "messages_new messages"; /* Definiert die Bereiche */
     gap: 20px; /* Abstand zwischen den Spalten */
  }
 
@@ -94,8 +94,8 @@ hr {
     text-align: center; /* Zentriert den Text */
 }
 
-.body .main_body script[type="text/javascript"] {
-    grid-area: test; /* Definiert den Bereich für die neuen Nachrichten */
+.body .main_body div[type="messages_new"] {
+    grid-area: messages_new; /* Definiert den Bereich für die neuen Nachrichten */
     display: flex; /* Flexbox für zentrierten Inhalt */
     flex-direction: column; /* Vertikale Anordnung der Kinder */
     justify-content: center; /* Zentriert den Inhalt vertikal */
