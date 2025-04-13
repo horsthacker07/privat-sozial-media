@@ -13,11 +13,12 @@ hr {
 }
 
 .navbar {
-    position: relative; /* Ermöglicht die absolute Positionierung von Kindern */
+    position: sticky; /* Ermöglicht die absolute Positionierung von Kindern */
     display: flex;
     justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
     align-items: center; /* Vertikale Zentrierung */
     background-color: #808D8E; /* Grüner Hintergrund */
+    backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
     color: white; /* Weißer Text */
     padding: 10px 20px; /* Innenabstand */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
