@@ -16,6 +16,7 @@ hr {
     .body .navbar h1[type="navbar-title"] {
         font-size: 20px; /* Kleinere Schriftgröße auf mobilen Geräten */
         text-align: left; /* Linksbündige Ausrichtung */
+        left: 0; /* Setzt die Position auf 0 */
         transform: none; /* Entfernt die Verschiebung */
     }
 
