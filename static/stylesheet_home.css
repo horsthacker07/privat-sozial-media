@@ -112,9 +112,9 @@ hr {
 .footer {
     position: fixed; /* Fixiert den Footer am unteren Rand */
     left: 0;
-    bottom: -200px; /* Versteckt den Footer bis auf eine kleine Leiste */
+    bottom: -230px; /* Versteckt den Footer bis auf eine kleine Leiste */
     width: 100%; /* Nimmt die gesamte Breite ein */
-    height: 200px; /* Gesamthöhe des Footers */
+    height: 220px; /* Gesamthöhe des Footers */
     background-color: #566161; /* Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
     padding: 10px; /* Innenabstand */
