@@ -16,7 +16,7 @@ document.getElementById('chat-form').addEventListener('submit', function(e) {
     const msgInput = document.getElementById('message');
     const msg = msgInput.value.trim();
 
-    if (msg !== '') {
+    if (msg != '') {
         socket.emit('message', msg); // Nachricht senden
         msgInput.value = ''; // Eingabefeld leeren
     }
