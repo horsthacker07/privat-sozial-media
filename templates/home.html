@@ -22,6 +22,7 @@
         });
 
         socket.on('message', function(data) {
+            console.log("Nachricht empfangen:", data);  // Debug
             $('#messages_new').append($('<p>').text(data));
         });
 
