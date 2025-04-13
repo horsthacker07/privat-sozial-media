@@ -55,5 +55,5 @@ def legal_status():
     return render_template('legal_status.html')
 
 
-if __name__ == "main":
-    socketio.run(app)
+if __name__ == 'main':
+    socketio.run(app, debug=True)
