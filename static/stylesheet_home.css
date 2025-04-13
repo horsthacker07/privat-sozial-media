@@ -125,7 +125,7 @@ hr {
 }
 
 .footer:hover {
-    bottom: 0; /* Zeigt den gesamten Footer an */
+    bottom: 20; /* Zeigt den gesamten Footer an */
 }
 
 .footer .footer-bar {
