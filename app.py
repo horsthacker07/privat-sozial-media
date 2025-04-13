@@ -1,11 +1,10 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session
 import os
-from dotenv import load_dotenv
 
 app = Flask(__name__)
 app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 
-PASSWORD = os.getenv('APP_PASSWORD')  # Passwort aus Umgebungsvariablen lesen
+APP_PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen lesen
 
 
 ### ab hier sind die Routen für home, login und logout ###
@@ -18,7 +17,7 @@ def root():
 
 @app.route('/login', methods=['POST'])
 def login():
-    if request.form['password'] == PASSWORD:
+    if request.form['password'] == APP_PASSWORD:
         session['logged_in'] = True
         return redirect(url_for('home'))
     else:
