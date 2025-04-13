@@ -43,7 +43,7 @@ body {
     color: #566161; /* Grüner Text beim Hover */
 }
 
- .body .maain_body {
+ .body .main_body {
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
