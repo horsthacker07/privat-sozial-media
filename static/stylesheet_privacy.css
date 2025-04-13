@@ -47,12 +47,12 @@ body {
 .body .main_body {
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
-    grid-template-rows: repeat(3, 1fr); /* Zwei gleich große Zeilen */
+    grid-template-rows: repeat(3, 1fr); /* Drei gleich große Zeilen */
     grid-template-areas:
     "cds td"
     "ur nc"
-    "c c"; /* Definiert die Bereiche */
-    gap: 20px; /* Abstand zwischen den Spalten */
+    ". c"; /* Definiert die Bereiche */
+    gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
 }
 
 .body .main_body p[type="cds"] {
@@ -67,7 +67,7 @@ body {
 }
 
 .body .main_body p[type="td"] {
-    grid-area: cds; /* Weist den Bereich zu */
+    grid-area: td; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
@@ -78,7 +78,7 @@ body {
 }
 
 .body .main_body p[type="ur"] {
-    grid-area: cds; /* Weist den Bereich zu */
+    grid-area: ur; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
@@ -89,7 +89,7 @@ body {
 }
 
 .body .main_body p[type="nc"] {
-    grid-area: cds; /* Weist den Bereich zu */
+    grid-area: nc; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
@@ -100,7 +100,7 @@ body {
 }
 
 .body .main_body p[type="c"] {
-    grid-area: cds; /* Weist den Bereich zu */
+    grid-area: c; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
