@@ -62,6 +62,7 @@ hr {
     display: flex; /* Flexbox für zentrierten Inhalt */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
+    text-align: center; /* Zentriert den Text */
     padding: 20px; /* Innenabstand */
     border: 1px solid #000000; /* Grauer Rahmen */
 }
@@ -71,6 +72,7 @@ hr {
     display: flex; /* Flexbox für zentrierten Inhalt */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
+    text-align: center; /* Zentriert den Text */
     padding: 20px; /* Innenabstand */
     border: 1px solid #000000; /* Grauer Rahmen */
 }
