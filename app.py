@@ -51,3 +51,7 @@ def privacy():
 @app.route('/legal_status')
 def legal_status():
     return render_template('legal_status.html')
+
+
+if __name__ == '__main__':
+    socketio.run(app, debug=True)
