@@ -47,7 +47,6 @@ body {
 }
 
 .main_body {
-    padding: 2%;
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
     grid-template-rows: repeat(4, 1fr); /* Vier gleich große Zeilen */
@@ -57,6 +56,7 @@ body {
     "ur nc"
     "c c"; /* Definiert die Bereiche */
     gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
+    margin: 3%;
 }
 
 .body .main_body div[type="pt"] {
