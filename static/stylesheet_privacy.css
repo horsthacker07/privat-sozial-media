@@ -55,7 +55,7 @@ body {
     gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
 }
 
-.body .main_body p.cds {
+.body .main_body div[type="cds"] {
     grid-area: cds; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
