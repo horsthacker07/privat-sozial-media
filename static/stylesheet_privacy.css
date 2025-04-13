@@ -44,7 +44,7 @@ body {
     color: #566161; /* Grüner Text beim Hover */
 }
 
-.body .main_body {
+.main_body {
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
     grid-template-rows: repeat(3, 1fr); /* Drei gleich große Zeilen */
@@ -55,7 +55,7 @@ body {
     gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
 }
 
-.body .main_body p[type="cds"] {
+.body .main_body p.cds {
     grid-area: cds; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
@@ -66,7 +66,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p[type="td"] {
+.body .main_body p.td {
     grid-area: td; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
@@ -77,7 +77,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p[type="ur"] {
+.body .main_body p.ur {
     grid-area: ur; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
@@ -88,7 +88,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p[type="nc"] {
+.body .main_body p.nc {
     grid-area: nc; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
@@ -99,7 +99,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p[type="c"] {
+.body .main_body p.c {
     grid-area: c; /* Weist den Bereich zu */
     display: flex;
     color: white; /* Weißer Text */
@@ -110,7 +110,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body a[type="link"] {
+.main_body a[type="link"] {
     color: #566161; /* Grüner Text */
     text-decoration: none; /* Entfernt die Unterstreichung */
     font-size: 16px; /* Schriftgröße */
@@ -118,7 +118,7 @@ body {
     transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
 }
 
-.body .main_body a[type="link"]:hover {
+.main_body a[type="link"]:hover {
     color: #bb87ff; /* Grüner Text beim Hover */
     text-decoration: underline; /* Unterstreichung beim Hover */
 }
