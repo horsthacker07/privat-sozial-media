@@ -50,7 +50,7 @@ body {
     gap: 20px; /* Abstand zwischen den Spalten */
  }
 
-.body div[type="content"] {
+.body .main_body div[type="content"] {
     grid-column: 1; /* Inhalt in der ersten Spalte */
     grid-row: 1; /* Inhalt in der ersten Zeile */
     justify-content: center; /* Zentriert den Inhalt vertikal */
@@ -59,7 +59,7 @@ body {
     border: 1px solid #000000; /* Grauer Rahmen */
 }
 
-.body div[type="messages"] {
+.body .main_body div[type="messages"] {
     grid-column: 2; /* Nachrichten in der zweiten Spalte */
     grid-row: 1; /* Nachrichten in der ersten Zeile */
     justify-content: center; /* Zentriert den Inhalt vertikal */
@@ -68,7 +68,7 @@ body {
     border: 1px solid #000000; /* Grauer Rahmen */
 }
 
-.body input[type="text"] {
+.body .main_body input[type="text"] {
     width: 50%;
     padding: 10px;
     margin: 10px 0;
@@ -78,12 +78,12 @@ body {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
 }
 
-.body input[type="text"]:hover {
+.body .main_body input[type="text"]:hover {
     background-color: #c8e2e499; /* Hellerer Hintergrund beim Hover */
     color: white; /* Weißer Text */
 }
 
-.body button[type="submit"] {
+.body .main_body button[type="submit"] {
     padding: 10px 20px;
     background-color: #a9d2d599; /* Grüner Hintergrund */
     color: white; /* Weißer Text */
@@ -94,7 +94,7 @@ body {
     transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
 }
 
-.body button[type="submit"]:hover {
+.body .main_body button[type="submit"]:hover {
     background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
 }
 
