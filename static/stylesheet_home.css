@@ -16,24 +16,26 @@ hr {
     .body .navbar h1[type="navbar-title"] {
         font-size: 20px; /* Kleinere Schriftgröße auf mobilen Geräten */
         left: auto; /* Entfernt die absolute Positionierung */
+        transform: none; /* Entfernt die Verschiebung */
     }
 
     .body .navbar a[type="logout-link"] {
         font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
-        right: auto; /* Entfernt die absolute Positionierung */
+        margin-left: 0; /* Entfernt den automatischen Abstand */
     }
 
     .body .main_body {
         grid-template-columns: 1fr; /* Eine Spalte auf mobilen Geräten */
-        grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
+        grid-template-rows: auto auto; /* Automatische Zeilenhöhe */
         grid-template-areas:
         "content"
         "messages"; /* Definiert die Bereiche */
+        gap: 10px; /* Reduzierter Abstand zwischen den Elementen */
     }
 
     .body .main_body input[type="text"],
     .body .main_body button[type="submit"] {
-        width: 80%; /* Breitere Eingabefelder auf mobilen Geräten */
+        width: 90%; /* Breitere Eingabefelder auf mobilen Geräten */
     }
 }
 
