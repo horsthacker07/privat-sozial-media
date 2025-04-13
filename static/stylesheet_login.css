@@ -51,7 +51,6 @@ body {
 
 .footer {
     position: fixed; /* Fixiert den Footer am unteren Rand */
-    bottom: -400px; /* Startet außerhalb des sichtbaren Bereichs */
     left: 0;
     width: 100%; /* Nimmt die gesamte Breite ein */
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
@@ -61,10 +60,6 @@ body {
     font-size: 13px;
     color: #ffffff;
     transition: bottom 0.3s ease; /* Weicher Übergang beim Einblenden */
-}
-
-body.body .footer {
-    bottom: 0; /* Zeigt den Footer an, wenn gescrollt wurde */
 }
 
 .footer a[type="footer-link"] {

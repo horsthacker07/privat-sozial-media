@@ -158,21 +158,33 @@ body {
 
 .footer {
     position: fixed; /* Fixiert den Footer am unteren Rand */
-    bottom: -100px; /* Startet außerhalb des sichtbaren Bereichs */
     left: 0;
+    bottom: -100px; /* Versteckt den Footer bis auf eine kleine Leiste */
     width: 100%; /* Nimmt die gesamte Breite ein */
-    background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
+    height: 100px; /* Gesamthöhe des Footers */
+    background-color: #566161; /* Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
-    padding: 10px; /* Optional: Innenabstand für den Footer */
-    border-top: 5px solid #434b4c; /* Optional: Trennlinie oben */
+    padding: 10px; /* Innenabstand */
+    border-top: 5px solid #434b4c; /* Trennlinie oben */
     font-size: 13px;
     color: #ffffff;
     transition: bottom 0.3s ease; /* Weicher Übergang beim Einblenden */
 }
 
-body.body .footer {
-    bottom: 0; /* Zeigt den Footer an, wenn die Klasse "scrolled" zum Body hinzugefügt wird */
+.footer:hover {
+    bottom: 0; /* Zeigt den gesamten Footer an */
 }
+
+.footer .footer-bar {
+    position: absolute;
+    top: -10px; /* Kleine Leiste sichtbar über dem Footer */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Höhe der sichtbaren Leiste */
+    background-color: #434b4c; /* Farbe der Leiste */
+    cursor: pointer; /* Zeigt an, dass die Leiste interaktiv ist */
+}
+
 
 .footer a[type="footer-link"] {
     color: #c8b4e2; /* Weißer Text */
