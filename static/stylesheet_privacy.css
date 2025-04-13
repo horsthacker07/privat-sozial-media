@@ -117,12 +117,13 @@ body {
     padding: 5px 10px; /* Innenabstand */
     transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
 }
+
 .body .main_body a[type="link"]:hover {
-    background-color: #c8e2e499; /* Grüner Hintergrund beim Hover */
-    color: white; /* Weißer Text beim Hover */
+    color: #bb87ff; /* Grüner Text beim Hover */
+    text-decoration: underline; /* Unterstreichung beim Hover */
 }
 
-footer {
+.footer {
     margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
