@@ -9,13 +9,13 @@ body {
 }
 
 .navbar {
-    position: sticky; /* Bleibt am oberen Rand kleben */
-    top: 0; /* Fixiert die Navbar am oberen Rand */
-    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen bleibt */
+    position: sticky; /* Fixiert die Navbar am oberen Rand */
+    top: 0; /* Setzt die Navbar an den oberen Rand */
+    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
     display: flex;
     justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
     align-items: center; /* Vertikale Zentrierung */
-    background-color: rgba(128, 141, 142, 0.8); /* Leicht durchsichtiger Hintergrund */
+    background-color: rgba(128, 141, 142, 0.5); /* Halbdurchsichtiger Hintergrund */
     backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
     color: white; /* Weißer Text */
     padding: 10px 20px; /* Innenabstand */
