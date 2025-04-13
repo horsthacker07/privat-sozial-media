@@ -55,20 +55,22 @@ body {
     gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
 }
 
-.body .main_body p.cds {
+.body .main_body div[type="cds"] {
     grid-area: cds; /* Weist den Bereich zu */
     display: flex;
+    flex-direction: column;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
     font-size: 16px; /* Schriftgröße */
-    background-color: #259c9c; /* Grüner Hintergrund */
+    background-color: #566161; /* Grüner Hintergrund */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p.td {
+.body .main_body div[type="td"] {
     grid-area: td; /* Weist den Bereich zu */
     display: flex;
+    flex-direction: column;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -77,9 +79,10 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p.ur {
+.body .main_body div[type="ur"] {
     grid-area: ur; /* Weist den Bereich zu */
     display: flex;
+    flex-direction: column;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -88,9 +91,10 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p.nc {
+.body .main_body div[type="nc"] {
     grid-area: nc; /* Weist den Bereich zu */
     display: flex;
+    flex-direction: column;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
@@ -99,9 +103,10 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.body .main_body p.c {
+.body .main_body div[type="c"] {
     grid-area: c; /* Weist den Bereich zu */
     display: flex;
+    flex-direction: column;
     color: white; /* Weißer Text */
     padding: 20px; /* Innenabstand */
     border-radius: 10px; /* Abgerundete Ecken */
