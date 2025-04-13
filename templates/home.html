@@ -14,7 +14,7 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        var socket = io.connect('https://private-sozial-media.onrender.com/home');
+        var socket = io.connect('/home');
         socket.on('connect', function() {
             console.log("Socket connected!"); // Debugging-Log
             socket.send("User connected!");
