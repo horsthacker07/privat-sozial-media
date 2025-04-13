@@ -13,7 +13,7 @@ socketio = SocketIO(app)
 
 @socketio.on('message')
 def handle_message(msg):
-    print("Received message: "+ msg)
+    print("Received message: " + msg)
     send(msg, broadcast=True)
 
 
