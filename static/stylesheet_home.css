@@ -123,7 +123,7 @@ hr {
     transition: bottom 0.3s ease; /* Weicher Übergang beim Einblenden */
 }
 
-body.scrolled .footer {
+body.body .footer {
     bottom: 0; /* Zeigt den Footer an, wenn gescrollt wurde */
 }
 
