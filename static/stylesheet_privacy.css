@@ -116,7 +116,7 @@ body {
 }
 
 .main_body a[type="link"] {
-    color: #566161; /* Grüner Text */
+    color: #c8b4e2; /* Grüner Text */
     text-decoration: none; /* Entfernt die Unterstreichung */
     font-size: 16px; /* Schriftgröße */
     padding: 5px 10px; /* Innenabstand */
