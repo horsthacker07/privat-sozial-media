@@ -109,7 +109,7 @@ body {
 }
 
 .footer a[type="footer-link"] {
-    color: #4f3e65; /* Weißer Text */
+    color: #c8b4e2; /* Weißer Text */
     text-decoration: none; /* Entfernt die Unterstreichung */
     font-size: 16px; /* Schriftgröße */
     padding: 5px 10px; /* Innenabstand */
@@ -119,5 +119,5 @@ body {
 }
 
 .footer a[type="footer-link"]:hover {
-    color: #72dddd; /* Grüner Text beim Hover */
+    color: #b882ff; /* Grüner Text beim Hover */
 }
