@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
     <link rel="stylesheet" href="static/stylesheet_home.css">
     
     <title>private sozial media</title>
@@ -24,9 +25,11 @@
             </ul>
         </div>
         <div type="messages">
+            <h2>Chat</h2>
+            <div id="chat-box"></div>
             <form>
-                <input type="text", name="message", placeholder="Enter your message here" required>
-                <button type="submit">submit</button>
+                <input type="text", name="message", placeholder="Enter your message here..." required>
+                <button onclick="sendMessage()">submit</button>
             </form>
         </div>
     </main>
