@@ -9,11 +9,13 @@ body {
 }
 
 .navbar {
-    position: sticky; /* Ermöglicht die absolute Positionierung von Kindern */
+    position: sticky; /* Bleibt am oberen Rand kleben */
+    top: 0; /* Fixiert die Navbar am oberen Rand */
+    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen bleibt */
     display: flex;
     justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
     align-items: center; /* Vertikale Zentrierung */
-    background-color: #808D8E; /* Grüner Hintergrund */
+    background-color: rgba(128, 141, 142, 0.8); /* Leicht durchsichtiger Hintergrund */
     backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
     color: white; /* Weißer Text */
     padding: 10px 20px; /* Innenabstand */
@@ -48,7 +50,7 @@ body {
     padding: 2%;
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
-    grid-template-rows: repeat(4, 1fr); /* Drei gleich große Zeilen */
+    grid-template-rows: repeat(4, 1fr); /* Vier gleich große Zeilen */
     grid-template-areas:
     "pt pt"
     "cds td"
@@ -143,13 +145,21 @@ body {
 }
 
 .footer {
-    margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
+    position: fixed; /* Fixiert den Footer am unteren Rand */
+    bottom: -100px; /* Startet außerhalb des sichtbaren Bereichs */
+    left: 0;
+    width: 100%; /* Nimmt die gesamte Breite ein */
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
     padding: 10px; /* Optional: Innenabstand für den Footer */
     border-top: 5px solid #434b4c; /* Optional: Trennlinie oben */
     font-size: 13px;
     color: #ffffff;
+    transition: bottom 0.3s ease; /* Weicher Übergang beim Einblenden */
+}
+
+body.scrolled .footer {
+    bottom: 0; /* Zeigt den Footer an, wenn die Klasse "scrolled" hinzugefügt wird */
 }
 
 .footer a[type="footer-link"] {
