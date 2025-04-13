@@ -2,6 +2,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    max-width: 100vw; /* Verhindert, dass die Breite größer als die Viewport-Breite wird */
     min-height: 100vh; /* Stellt sicher, dass der Body die gesamte Höhe des Viewports einnimmt */
     font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
     text-align: center;
@@ -63,8 +64,8 @@ hr {
     gap: 20px; /* Abstand zwischen den Spalten */
  }
 
-/* Placeholder for future styles for .Anzeige_element */
 .body .main_body .Anzeige_element {
+    margin: 10px; /* Abstand um das Element */
     border: 1px solid #000000; /* Grauer Rahmen */
     border-radius: 10px; /* Abgerundete Ecken */
     padding: 20px; /* Innenabstand */
