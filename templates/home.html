@@ -28,10 +28,9 @@
             });
     
             $('#sendBtn').on('click', function() {
-                const username = $('#username').val();
                 const message = $('#message').val();
-                if (username && message) {
-                    socket.send(username + ": " + message);
+                if (message) {
+                    socket.send(message);
                     $('#message').val('');
                     console.log("gesendet!!!");
                 }
@@ -68,7 +67,6 @@
             </div>
             
             <form id="chatForm">
-                <input type="text" id="username" placeholder="Enter your username..." required>
                 <input type="text" id="message" placeholder="Enter your message here..." required>
                 <button id="sendBtn">Send</button>
             </form>
