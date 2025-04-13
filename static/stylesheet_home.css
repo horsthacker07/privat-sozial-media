@@ -12,35 +12,6 @@ hr {
     color: none; /* Entfernt die Farbe des hr-Elements */
 }
 
-@media screen and (max-width: 768px) {
-    .body .navbar h1[type="navbar-title"] {
-        font-size: 20px; /* Kleinere Schriftgröße auf mobilen Geräten */
-        text-align: left; /* Linksbündige Ausrichtung */
-        left: 0; /* Setzt die Position auf 0 */
-        transform: none; /* Entfernt die Verschiebung */
-        margin-left: 10px; /* Optional: Abstand vom linken Rand */
-    }
-
-    .body .navbar a[type="logout-link"] {
-        font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
-        margin-left: 0; /* Entfernt den automatischen Abstand */
-    }
-
-    .body .main_body {
-        grid-template-columns: 1fr; /* Eine Spalte auf mobilen Geräten */
-        grid-template-rows: auto auto; /* Automatische Zeilenhöhe */
-        grid-template-areas:
-        "content"
-        "messages"; /* Definiert die Bereiche */
-        gap: 10px; /* Reduzierter Abstand zwischen den Elementen */
-    }
-
-    .body .main_body input[type="text"],
-    .body .main_body button[type="submit"] {
-        width: 90%; /* Breitere Eingabefelder auf mobilen Geräten */
-    }
-}
-
 .navbar {
     position: relative; /* Ermöglicht die absolute Positionierung von Kindern */
     display: flex;
