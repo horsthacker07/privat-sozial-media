@@ -26,19 +26,15 @@
                 console.log("Nachricht empfangen:", data);
                 $('#messages_new').append($('<p>').text(data));
             });
-    
-            $('#sendBtn').on('click', function() {
+
+            $('#chatForm').on('submit', function(e) {
+                e.preventDefault(); // verhindert Seitenreload
                 const message = $('#message').val();
                 if (message) {
                     socket.send(message);
                     $('#message').val('');
                     console.log("gesendet!!!");
                 }
-            });
-
-            $('#chatForm').on('submit', function(e) {
-                e.preventDefault(); // verhindert Seitenreload
-                $('#sendBtn').click(); // löst den bestehenden Button-Click-Handler aus
             });
         });
     </script>
