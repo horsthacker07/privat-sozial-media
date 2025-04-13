@@ -118,4 +118,5 @@ body {
 
 .footer a[type="footer-link"]:hover {
     color: #bb87ff; /* Grüner Text beim Hover */
+    text-decoration: underline; /* Unterstreichung beim Hover */
 }
