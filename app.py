@@ -10,6 +10,13 @@ APP_PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen
 
 ### SocketIO-Setup für messages ###
 
+socketio = SocketIO(app, cors_allowed_origins="*")
+
+@socketio.on('message')
+def handle_message(message):
+    print("Received message: " + message)
+    if message != "User connected!":
+        send(message, broadcast=True)
 
 
 ### ab hier sind die Routen für Websites/login/logout ###
@@ -46,3 +53,7 @@ def privacy():
 @app.route('/legal_status')
 def legal_status():
     return render_template('legal_status.html')
+
+
+if __name__ == "main":
+    socketio.run(app, host="0.0.0.0", port=5000)

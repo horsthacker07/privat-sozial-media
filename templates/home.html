@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-    <script src="static/chat.js"></script>
     <link rel="stylesheet" href="static/stylesheet_home.css">
     
     <title>private sozial media</title>
 </head>
 <body class="body">
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var socket = io.connect('https://private-sozial-media.onrender.com:5000');
+        socket.on('connect', function() {
+            socket.send("User connected!");
+        });
+
+        socket.on('message', function(data) {
+            $('#messages_new').append($('<p>').text(data));
+        });
+
+        $('#sendBtn').on('click', function() {
+            socket.send($('#username').val() + ": " + $('#message').val());
+            $('#message').val(''); // Clear the message input field after sending
+
+        });
+
+    })
+</script>
+
+
+
+
     <header class="navbar">
         <h1 type="navbar-title">Private Sozial Media</h1>
         <a href="https://private-sozial-media.onrender.com/logout" type="logout-link">Logout</a>
@@ -27,11 +51,14 @@
         </div>
         <div type="messages">
             <h2>Chat</h2>
-            <div id="chat-box"></div>
-            <form id="chat-form">
-                <input type="text", id="message", name="message", placeholder="Enter your message here...", autocomplete="off">
-                <button type="submit">submit</button>
-            </form>
+
+            <div id="messages_new">
+            </div>
+            
+            <input type="text", id="username", placeholder="Enter your username...">
+            <input type="text", id="message", placeholder="Enter your message here...">
+            <button type="sendBtn">Send</button>
+            
         </div>
     </main>
     <footer class="footer">
