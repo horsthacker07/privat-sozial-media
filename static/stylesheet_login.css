@@ -77,6 +77,5 @@ body.body .footer {
 
 .footer a[type="footer-link"]:hover {
     color: #bb87ff; /* Grüner Text beim Hover */
-    background-color: #3a3a3a; /* Dunkler Hintergrund beim Hover */
     text-decoration: underline; /* Unterstreichung beim Hover */
 }
