@@ -71,6 +71,18 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
+.body .main_body h1[type="pt-title"] {
+    margin: 0; /* Entfernt den Standardabstand */
+    font-size: 24px; /* Schriftgröße für die Überschrift */
+    color: #ffffff; /* Grüner Text */
+}
+
+.body .main_body p[type="pt-text"] {
+    margin: 0; /* Entfernt den Standardabstand */
+    font-size: 16px; /* Schriftgröße für den Text */
+    color: #ffffff; /* Grüner Text */
+}
+
 .body .main_body div[type="cds"] {
     grid-area: cds; /* Weist den Bereich zu */
     display: flex;
