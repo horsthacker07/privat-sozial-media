@@ -8,11 +8,116 @@ body {
     background: linear-gradient(to bottom, rgb(201, 180, 219),rgb(102, 93, 110)); /* Farbverlauf von oben nach unten */
 }
 
-.title, .subtitle, .privacy-text {
-    background: transparent; /* Entfernt die festen Hintergrundfarben */
+.navbar {
+    position: sticky; /* Ermöglicht die absolute Positionierung von Kindern */
+    display: flex;
+    justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
+    align-items: center; /* Vertikale Zentrierung */
+    background-color: #808D8E; /* Grüner Hintergrund */
+    backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
+    color: white; /* Weißer Text */
+    padding: 10px 20px; /* Innenabstand */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
-.footer {
+.body .navbar h1[type="navbar-title"] {
+    position: absolute;
+    left: 50%; /* Positioniert die Mitte des Titels */
+    transform: translateX(-50%); /* Verschiebt den Titel um die Hälfte seiner Breite */
+    margin: 0;
+    font-size: 24px; /* Schriftgröße für die Überschrift */
+}
+
+.body .navbar a[type="logout-link"] {
+    margin-left: auto; /* Schiebt den Logout-Link nach rechts */
+    color: white; /* Weißer Text */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 16px; /* Schriftgröße */
+    padding: 5px 10px; /* Innenabstand */
+    border: 1px solid white; /* Weißer Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+}
+
+.body .navbar a[type="logout-link"]:hover {
+    background-color: white; /* Weißer Hintergrund beim Hover */
+    color: #566161; /* Grüner Text beim Hover */
+}
+
+.body .main_body {
+    display: grid; /* Verwenden von Grid für Layout */
+    grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
+    grid-template-rows: repeat(3, 1fr); /* Zwei gleich große Zeilen */
+    grid-template-areas:
+    "cds td"
+    "ur nc"
+    "c c"; /* Definiert die Bereiche */
+    gap: 20px; /* Abstand zwischen den Spalten */
+}
+
+.body .main_body p[type="cds"] {
+    grid-area: cds; /* Weist den Bereich zu */
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    background-color: #566161; /* Grüner Hintergrund */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.body .main_body p[type="td"] {
+    grid-area: cds; /* Weist den Bereich zu */
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    background-color: #566161; /* Grüner Hintergrund */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.body .main_body p[type="ur"] {
+    grid-area: cds; /* Weist den Bereich zu */
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    background-color: #566161; /* Grüner Hintergrund */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.body .main_body p[type="nc"] {
+    grid-area: cds; /* Weist den Bereich zu */
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    background-color: #566161; /* Grüner Hintergrund */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.body .main_body p[type="c"] {
+    grid-area: cds; /* Weist den Bereich zu */
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    background-color: #566161; /* Grüner Hintergrund */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.body .main_body a[type="link"] {
+    color: #566161; /* Grüner Text */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 16px; /* Schriftgröße */
+    padding: 5px 10px; /* Innenabstand */
+    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+}
+.body .main_body a[type="link"]:hover {
+    background-color: #c8e2e499; /* Grüner Hintergrund beim Hover */
+    color: white; /* Weißer Text beim Hover */
+}
+
+footer {
     margin-top: auto; /* Schiebt den Footer an das Ende des flex-Containers */
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
     text-align: center; /* Zentriert den Text im Footer */
@@ -20,4 +125,17 @@ body {
     border-top: 5px solid #434b4c; /* Optional: Trennlinie oben */
     font-size: 13px;
     color: #ffffff;
+}
+
+.footer a[type="footer-link"] {
+    color: #c8b4e2; /* Weißer Text */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 16px; /* Schriftgröße */
+    padding: 5px 10px; /* Innenabstand */
+    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+}
+
+.footer a[type="footer-link"]:hover {
+    color: #bb87ff; /* Grüner Text beim Hover */
+    text-decoration: underline; /* Unterstreichung beim Hover */
 }
