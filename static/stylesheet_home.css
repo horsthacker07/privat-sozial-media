@@ -111,6 +111,7 @@ hr {
 
 .footer {
     position: fixed; /* Fixiert den Footer am unteren Rand */
+    bottom: 0; /* Positioniert den Footer am unteren Rand */
     left: 0;
     width: 100%; /* Nimmt die gesamte Breite ein */
     background-color: #566161; /* Optional: Hintergrundfarbe für den Footer */
