@@ -107,3 +107,17 @@ body {
     font-size: 13px;
     color: #ffffff;
 }
+
+.footer a[type="footer-link"] {
+    color: #4f3e65; /* Weißer Text */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 16px; /* Schriftgröße */
+    padding: 5px 10px; /* Innenabstand */
+    border: 1px solid white; /* Weißer Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+}
+
+.footer a[type="footer-link"]:hover {
+    color: #72dddd; /* Grüner Text beim Hover */
+}
