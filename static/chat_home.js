@@ -1,14 +1,14 @@
 const socket = io();
 
-socket.on('message', function(message) {
+socket.on('message', function(msg) {
     const chatBox = document.getElementById('chat-box');
-    chatBox.innerHTML += `<p>${message}</p>`;
+    chatBox.innerHTML += `<p>${msg}</p>`;
     chatBox.scrollTop = chatBox.scrollHeight;
 });
 
 function sendMessage() {
-    const messageInput = document.getElementById('message');
-    const message = messageInput.value;
-    socket.emit('message', message);
-    messageInput.value = '';
+    const msgInput = document.getElementById('message');
+    const msg = msgInput.value;
+    socket.emit('message', msg);
+    msgInput.value = '';
 }

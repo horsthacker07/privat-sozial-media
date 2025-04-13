@@ -9,12 +9,12 @@ APP_PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen
 
 
 ### SocketIO-Setup für messages ###
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app)
 
 @socketio.on('message')
-def handle_message(message):
-    print("Received message: "+ message)
-    send(message, broadcast=True)
+def handle_message(msg):
+    print("Received message: "+ msg)
+    send(msg, broadcast=True)
 
 
 ### ab hier sind die Routen für Websites/login/logout ###
