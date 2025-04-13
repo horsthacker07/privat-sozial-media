@@ -6,23 +6,6 @@ app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 # Fesetgelegtes Passwort
 PASSWORD = "secret_password"
 
-# JSON-Datenbank für global-chat
-global_chat = []
-
-
-@app.route('/global_chat_db', methods=['GET'])
-def get_messages():
-    return jsonify(global_chat_db=global_chat)
-
-
-@app.route('/global_chat_db', methods=['POST'])
-def add_message():
-    message = request.form.get('message', '').strip()
-    if message:  # Nur hinzufügen, wenn die Nachricht nicht leer ist
-        global_chat.append(message)
-        return jsonify(success=True, message="Message added"), 200
-    return jsonify(success=False, error="Message cannot be empty"), 400
-
 
 ### ab hier sind die Routen für home, login und logout ###
 
