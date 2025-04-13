@@ -43,7 +43,16 @@ body {
     color: #566161; /* Grüner Text beim Hover */
 }
 
+ .body .maain_body {
+    display: grid; /* Verwenden von Grid für Layout */
+    grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
+    grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
+    gap: 20px; /* Abstand zwischen den Spalten */
+ }
+
 .body div[type="content"] {
+    grid-column: 1; /* Inhalt in der ersten Spalte */
+    grid-row: 1; /* Inhalt in der ersten Zeile */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     padding: 20px; /* Innenabstand */
@@ -51,6 +60,8 @@ body {
 }
 
 .body div[type="messages"] {
+    grid-column: 2; /* Nachrichten in der zweiten Spalte */
+    grid-row: 1; /* Nachrichten in der ersten Zeile */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     padding: 20px; /* Innenabstand */
