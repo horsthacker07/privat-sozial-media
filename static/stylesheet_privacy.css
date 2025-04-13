@@ -51,7 +51,7 @@ body {
     grid-template-areas:
     "cds td"
     "ur nc"
-    ". c"; /* Definiert die Bereiche */
+    "c c"; /* Definiert die Bereiche */
     gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
 }
 
