@@ -2,4 +2,3 @@ flask
 gunicorn
 flask-socketio
 python-socketio
-eventlet>=0.33.3
