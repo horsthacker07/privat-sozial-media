@@ -12,6 +12,31 @@ hr {
     color: none; /* Entfernt die Farbe des hr-Elements */
 }
 
+@media screen and (max-width: 768px) {
+    .body .navbar h1[type="navbar-title"] {
+        font-size: 20px; /* Kleinere Schriftgröße auf mobilen Geräten */
+        left: auto; /* Entfernt die absolute Positionierung */
+    }
+
+    .body .navbar a[type="logout-link"] {
+        font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
+        right: auto; /* Entfernt die absolute Positionierung */
+    }
+
+    .body .main_body {
+        grid-template-columns: 1fr; /* Eine Spalte auf mobilen Geräten */
+        grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
+        grid-template-areas:
+        "content"
+        "messages"; /* Definiert die Bereiche */
+    }
+
+    .body .main_body input[type="text"],
+    .body .main_body button[type="submit"] {
+        width: 80%; /* Breitere Eingabefelder auf mobilen Geräten */
+    }
+}
+
 .navbar {
     position: relative; /* Ermöglicht die absolute Positionierung von Kindern */
     display: flex;
@@ -60,6 +85,7 @@ hr {
 .body .main_body div[type="content"] {
     grid-area: content; /* Definiert den Bereich für den Inhalt */
     display: flex; /* Flexbox für zentrierten Inhalt */
+    flex-direction: column; /* Vertikale Anordnung der Kinder */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
