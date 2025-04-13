@@ -63,6 +63,16 @@ hr {
     gap: 20px; /* Abstand zwischen den Spalten */
  }
 
+/* Placeholder for future styles for .Anzeige_element */
+.body .main_body .Anzeige_element {
+    border: 1px solid #000000; /* Grauer Rahmen */
+    border-radius: 10px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
+    background-color: #c0c0c09d; /* Heller Hintergrund */
+    color: #000000; /* Schwarzer Text */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
+}
+
 .body .main_body div[type="content"] {
     grid-area: content; /* Definiert den Bereich für den Inhalt */
     display: flex; /* Flexbox für zentrierten Inhalt */
@@ -70,8 +80,6 @@ hr {
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
-    padding: 20px; /* Innenabstand */
-    border: 1px solid #000000; /* Grauer Rahmen */
 }
 
 .body .main_body div[type="messages"] {
@@ -81,8 +89,6 @@ hr {
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
-    padding: 20px; /* Innenabstand */
-    border: 1px solid #000000; /* Grauer Rahmen */
 }
 
 .body .main_body input[type="text"] {
