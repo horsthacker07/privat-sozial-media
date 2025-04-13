@@ -45,6 +45,7 @@ body {
 }
 
 .main_body {
+    padding: 2%;
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
     grid-template-rows: repeat(4, 1fr); /* Drei gleich große Zeilen */
