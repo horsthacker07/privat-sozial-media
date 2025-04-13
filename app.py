@@ -37,3 +37,7 @@ def logout():
 @app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
+
+@app.route('/legal_status')
+def legal_status():
+    return render_template('legal_status.html')
