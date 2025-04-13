@@ -1,25 +1,26 @@
-// Verbindung zum Socket.IO-Server aufbauen
+// Verbindung zum Socket.IO-Server herstellen
 const socket = io();
 
-// Wenn eine Nachricht vom Server kommt, im Chat anzeigen
+// Neue Nachrichten vom Server empfangen
 socket.on('message', function(msg) {
     const chatBox = document.getElementById('chat-box');
     const p = document.createElement('p');
     p.textContent = msg;
     chatBox.appendChild(p);
-    chatBox.scrollTop = chatBox.scrollHeight; // Immer nach unten scrollen
+    chatBox.scrollTop = chatBox.scrollHeight; // Automatisch nach unten scrollen
 });
 
-// Wenn das Formular abgeschickt wird (Enter oder Button)
+// Formular für Nachrichtensenden abfangen
 document.getElementById('chat-form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Seite nicht neuladen
-    const msgInput = document.getElementById('message');
-    const msg = msgInput.value.trim();
+    e.preventDefault(); // Verhindert Seiten-Reload
 
-    if (msg != '') {
-        socket.emit('message', msg); // Nachricht senden
-        msgInput.value = ''; // Eingabefeld leeren
+    const msgInput = document.getElementById('message');
+    const msg = msgInput.value.trim(); // Leerzeichen entfernen
+
+    if (msg !== '') {
+        socket.emit('message', msg);  // Nachricht an Server senden
+        msgInput.value = '';          // Eingabefeld leeren
     }
 
-    msgInput.focus(); // Cursor bleibt im Eingabefeld
+    msgInput.focus(); // Cursor bleibt im Feld
 });
