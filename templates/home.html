@@ -26,6 +26,7 @@
         $('#sendBtn').on('click', function() {
             socket.send($('#username').val() + ": " + $('#message').val());
             $('#message').val(''); // Clear the message input field after sending
+            console.log("gesendet!!!");
 
         });
 
