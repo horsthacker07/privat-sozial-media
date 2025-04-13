@@ -28,8 +28,10 @@
         <div type="messages">
             <h2>Chat</h2>
             <div id="chat-box"></div>
-            <input type="text", name="message", placeholder="Enter your message here...">
-            <button onclick="sendMessage()">submit</button>
+            <form id="chat-form">
+                <input type="text", id="message", name="message", placeholder="Enter your message here...">
+                <button type="submit">submit</button>
+            </form>
         </div>
     </main>
     <footer class="footer">
