@@ -113,11 +113,9 @@ body {
     text-decoration: none; /* Entfernt die Unterstreichung */
     font-size: 16px; /* Schriftgröße */
     padding: 5px 10px; /* Innenabstand */
-    border: 1px solid white; /* Weißer Rahmen */
-    border-radius: 5px; /* Abgerundete Ecken */
     transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
 }
 
 .footer a[type="footer-link"]:hover {
-    color: #b882ff; /* Grüner Text beim Hover */
+    color: #c8b4e2; /* Grüner Text beim Hover */
 }
