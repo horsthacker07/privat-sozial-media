@@ -1,10 +1,10 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session
+import os
 
 app = Flask(__name__)
 app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 
-# Fesetgelegtes Passwort
-PASSWORD = "secret_password"
+PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen lesen
 
 
 ### ab hier sind die Routen für home, login und logout ###
