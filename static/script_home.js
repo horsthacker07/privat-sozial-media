@@ -19,7 +19,7 @@ $(document).ready(function() {
         messages.forEach(function (msg) {
             box.append($('<p>').text(msg));
         });
-        box.scrollTop(box[0].scrollHeight); // ganz nach unten scrollen
+        //nope       box.scrollTop(box[0].scrollHeight); // ganz nach unten scrollen
     });
 
     socket.on('connect', function () {
@@ -29,7 +29,7 @@ $(document).ready(function() {
     socket.on('message', function (data) {
         const box = $('#messages_new');
         box.append($('<p>').text(data));
-        box.scrollTop(box[0].scrollHeight);
+        //nope      box.scrollTop(box[0].scrollHeight);
     });
 
 
