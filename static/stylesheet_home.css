@@ -97,6 +97,12 @@ hr {
     text-align: center; /* Zentriert den Text */
 }
 
+#messages_new {
+    height: 100%;
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    padding-right: 8px;
+}
+
 #chatForm {
     margin-top: auto;
     padding-bottom: 1rem; /* Optional: Abstand zum unteren Rand */
