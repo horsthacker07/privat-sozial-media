@@ -93,18 +93,21 @@ hr {
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
 }
+
 .body .main_body div[type="messages"] {
     grid-area: messages; /* Definiert den Bereich für die Nachrichten */
     display: flex; /* Flexbox für zentrierten Inhalt */
-    flex-direction: row; /* Horizontale Anordnung der Kinder */
-    justify-content: center; /* Zentriert den Inhalt horizontal */
-    align-items: center; /* Zentriert den Inhalt vertikal */
-    text-align: center; /* Zentriert den Text */
-    flex-wrap: wrap; /* Zeilenumbruch bei Bedarf */
-    width: 100%; /* Fixiert die Breite */
-    height: 100%; /* Fixiert die Höhe */
-    overflow: hidden; /* Verhindert jegliches Scrollen */
+    flex-direction: row; /* Vertikale Anordnung der Kinder */
+    justify-content: center; /* Startet den Inhalt oben */
+    align-items: center; /* Richtet den Inhalt links aus */
+    text-align: centre; /* Text linksbündig */
+    flex-wrap: wrap;
+    max-width: 100%; /* Verhindert, dass die Breite größer wird */
+    max-height: 100%; /* Verhindert, dass die Höhe größer wird */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
     word-wrap: break-word; /* Bricht lange Wörter um */
+    overflow-wrap: break-word; /* Bricht lange Wörter um */
     box-sizing: border-box; /* Bezieht Padding und Border in die Breite und Höhe ein */
 }
 
