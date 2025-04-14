@@ -36,10 +36,16 @@ $(document).ready(function() {
     $('#chatForm').on('submit', function(e) {
         e.preventDefault(); // verhindert Seitenreload
         const message = $('#message').val();
+        length = message.length;
         if (message) {
-            socket.send(message);
-            $('#message').val('');
-            console.log("gesendet!!!");
+            if (length > 50) {
+                alert("Die Nachricht ist zu lang! (max. 50 Zeichen)");
+            } else {
+                // Nachricht an den Server senden
+                socket.send(message);
+                $('#message').val('');
+                console.log("gesendet!!!");
+            }
         }
     });
 });
