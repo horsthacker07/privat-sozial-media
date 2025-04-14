@@ -12,6 +12,7 @@
         padding: 10px 20px; /* Innenabstand */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
         flex-wrap: wrap; /* Erlaubt Umbruch bei geringer Breite */
+        height: fit-content;
     }
 
     .navbar h1[type="navbar-title"] {
