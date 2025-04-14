@@ -54,15 +54,17 @@ hr {
     color: #566161; /* Grüner Text beim Hover */
 }
 
- .body .main_body {
+.body .main_body {
+    flex: 1; /* nimmt den restlichen Platz zwischen Header & Footer */
+    
     display: grid; /* Verwenden von Grid für Layout */
-    grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
+    grid-template-columns: 3fr, 1fr; /* Zwei Spalten, links ist größer als rechts */
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
     grid-template-areas:
     "content messages"
     "links_unten messages"; /* Definiert die Bereiche */
     gap: 10px; /* Abstand zwischen den Spalten */
- }
+}
 
 .body .main_body .Anzeige_element {
     margin: 10px; /* Abstand um das Element */
