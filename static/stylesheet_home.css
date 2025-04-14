@@ -65,11 +65,10 @@ hr {
     "links_unten messages"; /* Definiert die Bereiche */
     gap: 10px; /* Abstand zwischen den Spalten */
     margin-bottom: 20px; /* Abstand zum Footer */
-    padding-bottom: 20px;
 }
 
 .body .main_body .Anzeige_element {
-    margin: 10px; /* Abstand um das Element */
+    margin: 20px; /* Abstand um das Element */
     border: 1px solid #00000033; /* Grauer Rahmen */
     border-radius: 10px; /* Abgerundete Ecken */
     padding: 20px; /* Innenabstand */
