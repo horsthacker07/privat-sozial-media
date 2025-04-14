@@ -63,7 +63,7 @@ hr {
     "content messages"
     "links_unten messages"; /* Definiert die Bereiche */
     gap: 10px; /* Abstand zwischen den Spalten */
-    margin-bottom: 20px; /* Abstand zum Footer */
+    margin-bottom: 50px; /* Abstand zum Footer */
 }
 
 .body .main_body .Anzeige_element {
