@@ -26,7 +26,12 @@ socketio = SocketIO(app, cors_allowed_origins="*", async_mode="eventlet")
 @socketio.on('message')
 def handle_message(message):
     print("Received message: " + message)
+
     if message != "User connected!":
+
+        if len(messages_db) >= 10:
+            messages_db.pop(0)  # Entferne die älteste Nachricht (erste in der Liste)
+            
         messages_db.append(message)
         send(message, broadcast=True)
 
