@@ -68,7 +68,7 @@ hr {
 }
 
 .body .main_body .Anzeige_element {
-    margin: 10px; /* Abstand um das Element */
+    margin: 5px; /* Abstand um das Element */
     border: 1px solid #00000033; /* Grauer Rahmen */
     border-radius: 10px; /* Abgerundete Ecken */
     padding: 20px; /* Innenabstand */
@@ -96,6 +96,12 @@ hr {
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
+}
+
+#messages_new {
+    height: 100%;
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    padding-right: 8px;
 }
 
 #chatForm {
