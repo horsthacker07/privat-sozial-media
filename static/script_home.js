@@ -7,16 +7,12 @@ $(document).ready(function() {
         socket.send("User connected!");
     });
 
-    socket.on('messages_db', function(data) {
+    socket.on('message', function(data) {
         console.log("Nachricht empfangen:", data);
 
         $('#messages_new').empty();
 
-        for (i in data) {
-            $('#messages_new').append($('<p>').text(data[i]));
-        }
-
-        // $('#messages_new').append($('<p>').text(data));
+        $('#messages_new').append($('<p>').text(data));
     });
 
 
