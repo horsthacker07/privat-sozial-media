@@ -15,6 +15,7 @@ messages_db = []  # Database für Nachrichten
 @app.route('/messages')
 def get_messages():
     if not session.get('logged_in'):
+        print("Unauthorized access attempt to /messages")
         return 'not allowed !!!!!!', 403
     return jsonify(messages_db)
 
