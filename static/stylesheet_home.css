@@ -67,7 +67,7 @@ hr {
 }
 
 .body .main_body .Anzeige_element {
-    margin: 5px; /* Abstand um das Element */
+    margin: 10px; /* Abstand um das Element */
     border: 1px solid #00000033; /* Grauer Rahmen */
     border-radius: 10px; /* Abgerundete Ecken */
     padding: 20px; /* Innenabstand */
@@ -79,6 +79,10 @@ hr {
     word-wrap: break-word; /* Bricht lange Wörter um */
     overflow-wrap: break-word; /* Bricht lange Wörter um */
     white-space: normal; /* Erlaubt Zeilenumbrüche */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+
+
 }
 
 .body .main_body div[type="content"] {
