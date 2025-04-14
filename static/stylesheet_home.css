@@ -108,10 +108,13 @@ hr {
 }
 
 #messages_new {
-    max-width: fit-content; /* Verhindert, dass die Breite größer wird */
+    max-width: 100%; /* Verhindert, dass die Breite größer wird */
     height: 100%;
     overflow-y: auto; /* Ermöglicht vertikales Scrollen */
     margin-right: 8px;
+    word-wrap: break-word; /* Bricht lange Wörter um */
+    overflow-wrap: break-word; /* Bricht lange Wörter um */
+    white-space: normal; /* Erlaubt Zeilenumbrüche */
 }
 
 #chatForm {
