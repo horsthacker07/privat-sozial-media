@@ -60,7 +60,7 @@ hr {
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
     grid-template-areas:
     "content messages"
-    "messages_new messages"; /* Definiert die Bereiche */
+    "links_unten ."; /* Definiert die Bereiche */
     gap: 20px; /* Abstand zwischen den Spalten */
  }
 
