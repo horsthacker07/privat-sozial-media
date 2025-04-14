@@ -68,7 +68,7 @@ hr {
 }
 
 .body .main_body .Anzeige_element {
-    margin: 20px; /* Abstand um das Element */
+    margin: 5px; /* Abstand um das Element */
     border: 1px solid #00000033; /* Grauer Rahmen */
     border-radius: 10px; /* Abgerundete Ecken */
     padding: 20px; /* Innenabstand */
