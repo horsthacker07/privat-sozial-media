@@ -94,16 +94,6 @@ hr {
     text-align: center; /* Zentriert den Text */
 }
 
-.body .main_body div[type="messages_new"] {
-    grid-area: messages_new; /* Definiert den Bereich für die neuen Nachrichten */
-    display: flex; /* Flexbox für zentrierten Inhalt */
-    flex-direction: column; /* Vertikale Anordnung der Kinder */
-    justify-content: center; /* Zentriert den Inhalt vertikal */
-    align-items: center; /* Zentriert den Inhalt horizontal */
-    text-align: center; /* Zentriert den Text */
-}
-
-/* #chatForm befindet sich im main_body div[type messages_new]*/
 #chatForm {
     margin-top: auto;
     padding-bottom: 1rem; /* Optional: Abstand zum unteren Rand */
@@ -137,6 +127,15 @@ hr {
 
 .body .main_body button[type="submit"]:hover {
     background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
+}
+
+.body .main_body div[type="links_unten"] {
+    grid-area: links_unten; /* Definiert den Bereich für die neuen Nachrichten */
+    display: flex; /* Flexbox für zentrierten Inhalt */
+    flex-direction: column; /* Vertikale Anordnung der Kinder */
+    justify-content: center; /* Zentriert den Inhalt vertikal */
+    align-items: center; /* Zentriert den Inhalt horizontal */
+    text-align: center; /* Zentriert den Text */
 }
 
 .footer {
