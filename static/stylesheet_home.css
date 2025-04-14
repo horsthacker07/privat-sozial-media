@@ -76,7 +76,9 @@ hr {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
     max-width: 100%; /* Verhindert, dass die Breite größer wird */
     box-sizing: border-box; /* Bezieht Padding und Border in die Breite ein */
-    flex-wrap: wrap;
+    word-wrap: break-word; /* Bricht lange Wörter um */
+    overflow-wrap: break-word; /* Bricht lange Wörter um */
+    white-space: normal; /* Erlaubt Zeilenumbrüche */
 }
 
 .body .main_body div[type="content"] {
@@ -95,13 +97,13 @@ hr {
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
+    flex-wrap: wrap;
 }
 
 #messages_new {
-    flex-wrap: wrap;
     height: 100%;
     overflow-y: auto; /* Ermöglicht vertikales Scrollen */
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 #chatForm {
