@@ -8,6 +8,17 @@ app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 APP_PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen lesen
 
 
+### Database- und Routen-Setup für messages ###
+
+messages_db = []  # Database für Nachrichten
+
+@app.route('/messages')
+def get_messages():
+    if not session.get('logged_in'):
+        print("Unauthorized access attempt to /messages")
+        return 'not allowed !!!!!!', 403
+    return jsonify(messages_db)
+
 ### SocketIO-Setup für messages ###
 
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode="eventlet")
@@ -16,6 +27,7 @@ socketio = SocketIO(app, cors_allowed_origins="*", async_mode="eventlet")
 def handle_message(message):
     print("Received message: " + message)
     if message != "User connected!":
+        messages_db.append(message)
         send(message, broadcast=True)
 
 
