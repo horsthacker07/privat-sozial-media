@@ -12,37 +12,6 @@
     <title>private sozial media</title>
 </head>
 <body class="body">
-
-<!--
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var socket = io({ transports: ['websocket'], upgrade: false });
-    
-            socket.on('connect', function() {
-                console.log("Socket connected!");
-                socket.send("User connected!");
-            });
-    
-            socket.on('message', function(data) {
-                console.log("Nachricht empfangen:", data);
-                $('#messages_new').append($('<p>').text(data));
-            });
-
-            $('#chatForm').on('submit', function(e) {
-                e.preventDefault(); // verhindert Seitenreload
-                const message = $('#message').val();
-                if (message) {
-                    socket.send(message);
-                    $('#message').val('');
-                    console.log("gesendet!!!");
-                }
-            });
-        });
-    </script>
--->
-
-
-
     <header class="navbar">
         <h1 type="navbar-title">Private Sozial Media</h1>
         <a href="https://private-sozial-media.onrender.com/logout" type="logout-link">Logout</a>
@@ -66,7 +35,7 @@
             </form>
             
         </div>
-        <div type="links_unten" id="links_unten" class="Anzeige_element">
+        <div type="links_unten" class="Anzeige_element">
             <h4>links_unten</h4>
             <p>In Bearbeitung</p>
         </div>
@@ -91,6 +60,6 @@
             <a href="mailto:horsthacker07@gmail.com" type="footer-link">horsthacker07@gmail.com</a>
         </p>
         </div>
-      </footer>
+    </footer>
 </body>
 </html>
