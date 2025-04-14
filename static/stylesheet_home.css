@@ -55,7 +55,7 @@ hr {
 }
 
 .body .main_body {
-    flex: 1; /* nimmt den restlichen Platz zwischen Header & Footer */
+    /*flex: 1;  nimmt den restlichen Platz zwischen Header & Footer */
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: 3fr 1fr; /* Zwei Spalten, links ist größer als rechts */
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
