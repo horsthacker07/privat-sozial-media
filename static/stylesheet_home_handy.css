@@ -1,0 +1,158 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: sticky; /* Fixiert die Navbar am oberen Rand */
+        top: 0; /* Setzt die Navbar an den oberen Rand */
+        z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
+        display: flex;
+        justify-content: space-between; /* Platz zwischen Titel und Logout-Link */
+        align-items: center; /* Vertikale Zentrierung */
+        background-color: rgba(128, 141, 142, 0.5); /* Halbdurchsichtiger Hintergrund */
+        backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
+        color: white; /* Weißer Text */
+        padding: 10px 20px; /* Innenabstand */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+        flex-wrap: wrap; /* Erlaubt Umbruch bei geringer Breite */
+    }
+
+    .navbar h1[type="navbar-title"] {
+        flex: 1; /* Nimmt verfügbaren Platz ein */
+        text-align: left; /* Ausrichtung am linken Rand */
+        margin: 0;
+        font-size: 18px; /* Schriftgröße für kleinere Bildschirme */
+        word-wrap: break-word; /* Bricht lange Wörter um */
+    }
+
+    .navbar a[type="logout-link"] {
+        flex: 0; /* Beibehaltung der ursprünglichen Größe */
+        margin-left: auto; /* Schiebt den Logout-Link nach rechts */
+        color: white; /* Weißer Text */
+        text-decoration: none; /* Entfernt die Unterstreichung */
+        font-size: 16px; /* Schriftgröße */
+        padding: 5px 10px; /* Innenabstand */
+        border: 1px solid white; /* Weißer Rahmen */
+        border-radius: 5px; /* Abgerundete Ecken */
+        transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+    }
+
+    .navbar a[type="logout-link"]:hover {
+        background-color: white; /* Weißer Hintergrund beim Hover */
+        color: #566161; /* Grüner Text beim Hover */
+    }
+    
+    .body .main_body {
+        flex-grow: 1;
+        display: grid; /* Verwenden von Grid für Layout */
+        grid-template-columns:1fr; /* Zwei Spalten, links ist größer als rechts */
+        grid-template-rows: repeat(3, 1fr); /* Zwei gleich große Zeilen */
+        grid-template-areas:
+        "messages"
+        "content" 
+        "links_unten"; /* Definiert die Bereiche */
+        gap: 10px; /* Abstand zwischen den Spalten */
+        margin-bottom: 50px; /* Abstand zum Footer */
+    }
+    
+    div {
+        backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Leichter Schatten für bessere Lesbarkeit */
+    }
+    
+    .body .main_body .Anzeige_element {
+        margin: 10px; /* Abstand um das Element */
+        border: 1px solid #00000033; /* Grauer Rahmen */
+        border-radius: 10px; /* Abgerundete Ecken */
+        padding: 20px; /* Innenabstand */
+        background-color: #c0c0c033; /* Heller Hintergrund */
+        color: #000000; /* Schwarzer Text */
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
+        max-width: 100%; /* Verhindert, dass die Breite größer wird */
+        box-sizing: border-box; /* Bezieht Padding und Border in die Breite ein */
+        word-wrap: break-word; /* Bricht lange Wörter um */
+        overflow-wrap: break-word; /* Bricht lange Wörter um */
+        white-space: normal; /* Erlaubt Zeilenumbrüche */
+        overflow-x: hidden; /* Verhindert horizontales Scrollen */
+        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    }
+    
+    .body .main_body div[type="content"] {
+        grid-area: content; /* Definiert den Bereich für den Inhalt */
+        display: flex; /* Flexbox für zentrierten Inhalt */
+        flex-direction: column; /* Vertikale Anordnung der Kinder */
+        justify-content: center; /* Zentriert den Inhalt vertikal */
+        align-items: center; /* Zentriert den Inhalt horizontal */
+        text-align: center; /* Zentriert den Text */
+    }
+    
+    .body .main_body div[type="messages"] {
+        grid-area: messages; /* Definiert den Bereich für die Nachrichten */
+        display: flex; /* Flexbox für zentrierten Inhalt */
+        flex-direction: column; /* Vertikale Anordnung der Kinder */
+        justify-content: center; /* Startet den Inhalt oben */
+        align-items: center; /* Richtet den Inhalt links aus */
+        text-align: center; /* Text linksbündig */
+        flex-wrap: nowrap;
+        max-width: 100%; /* Verhindert, dass die Breite größer wird */
+        max-height: 100%; /* Verhindert, dass die Höhe größer wird */
+        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+        overflow-x: hidden; /* Verhindert horizontales Scrollen */
+        word-wrap: break-word; /* Bricht lange Wörter um */
+        overflow-wrap: break-word; /* Bricht lange Wörter um */
+        box-sizing: border-box; /* Bezieht Padding und Border in die Breite und Höhe ein */
+    }
+    
+    #messages_new {
+        max-width: 100%; /* Verhindert, dass die Breite größer wird */
+        height: 100%;
+        overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+        margin-right: 8px;
+        word-wrap: break-word; /* Bricht lange Wörter um */
+        overflow-wrap: break-word; /* Bricht lange Wörter um */
+        white-space: normal; /* Erlaubt Zeilenumbrüche */
+        backdrop-filter: none; /* Entfernt den Weichzeichner-Effekt */
+    }
+    
+    #chatForm {
+        margin-top: auto;
+        padding-bottom: 1rem; /* Optional: Abstand zum unteren Rand */
+    }
+    
+    .body .main_body input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px; /* Abgerundete Ecken */
+        font-size: 16px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
+    }
+    
+    .body .main_body input[type="text"]:hover {
+        background-color: #c8e2e499; /* Hellerer Hintergrund beim Hover */
+        color: white; /* Weißer Text */
+    }
+    
+    .body .main_body button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #a9d2d599; /* Grüner Hintergrund */
+        color: white; /* Weißer Text */
+        border: none;
+        border-radius: 5px; /* Abgerundete Ecken */
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
+    }
+    
+    .body .main_body button[type="submit"]:hover {
+        background-color: #5ba9ae99; /* Dunkleres Grün beim Hover */
+    }
+    
+    .body .main_body div[type="links_unten"] {
+        grid-area: links_unten; /* Definiert den Bereich für die neuen Nachrichten */
+        display: flex; /* Flexbox für zentrierten Inhalt */
+        flex-direction: column; /* Vertikale Anordnung der Kinder */
+        justify-content: center; /* Zentriert den Inhalt vertikal */
+        align-items: center; /* Zentriert den Inhalt horizontal */
+        text-align: center; /* Zentriert den Text */
+    }
+     
+}
