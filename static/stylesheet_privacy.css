@@ -31,22 +31,6 @@ body {
     font-size: 24px; /* Schriftgröße für die Überschrift */
 }
 
-.body .navbar a[type="logout-link"] {
-    margin-left: auto; /* Schiebt den Logout-Link nach rechts */
-    color: white; /* Weißer Text */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    font-size: 16px; /* Schriftgröße */
-    padding: 5px 10px; /* Innenabstand */
-    border: 1px solid white; /* Weißer Rahmen */
-    border-radius: 5px; /* Abgerundete Ecken */
-    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
-}
-
-.body .navbar a[type="logout-link"]:hover {
-    background-color: white; /* Weißer Hintergrund beim Hover */
-    color: #566161; /* Grüner Text beim Hover */
-}
-
 .main_body {
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
