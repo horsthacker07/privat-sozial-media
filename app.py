@@ -34,8 +34,8 @@ def handle_message(message):
 
         messages_db.append(message)
 
-        socketio.emit('update_messages', messages_db, broadcast=True)
-        #send(message, broadcast=True)
+        #socketio.emit('update_messages', messages_db, broadcast=True)
+        send(message, broadcast=True)
 
 
 ### ab hier sind die Routen für Websites/login/logout ###
