@@ -14,6 +14,8 @@ messages_db = []  # Database für Nachrichten
 
 @app.route('/messages')
 def get_messages():
+    if not session.get('logged_in'):
+        return 'not allowed !!!!!!', 403
     return jsonify(messages_db)
 
 ### SocketIO-Setup für messages ###
