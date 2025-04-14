@@ -103,6 +103,12 @@ hr {
     text-align: center; /* Zentriert den Text */
 }
 
+/* #chatForm befindet sich im main_body div[type messages_new]*/
+#chatForm {
+    margin-top: auto;
+    padding-bottom: 1rem; /* Optional: Abstand zum unteren Rand */
+}
+
 .body .main_body input[type="text"] {
     width: 50%;
     padding: 10px;
