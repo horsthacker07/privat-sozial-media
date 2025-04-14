@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif; /* Schriftart für den gesamten Body */
     text-align: center;
     background-attachment: fixed;
-    background: linear-gradient(to bottom, rgb(250, 244, 255), rgb(234, 211, 255)); /* Farbverlauf von oben nach unten */
+    background: linear-gradient(to bottom, rgb(250, 244, 255), rgb(148, 142, 153)); /* Farbverlauf von oben nach unten */
 }
 
 .navbar {
