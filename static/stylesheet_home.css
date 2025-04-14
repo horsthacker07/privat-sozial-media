@@ -98,6 +98,7 @@ hr {
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
     flex-wrap: wrap;
+    max-width: 100%; /* Verhindert, dass die Breite größer wird */
 }
 
 #messages_new {
