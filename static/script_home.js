@@ -10,7 +10,16 @@ $(document).ready(function() {
     socket.on('message', function(data) {
         console.log("Nachricht empfangen:", data);
 
-        $('#messages_new').append($('<p>').text(data));
+        const box1 = $('#messages_new');
+
+        const paragraphCount = box.find('p').length;
+
+        // Löscht den ersten Paragraphen, wenn 10 oder mehr Paragraphen vorhanden sind
+        if (paragraphCount >= 10) {
+            box1.find('p').first().remove();
+        }
+
+        box1.append($('<p>').text(data));
     });
 
 
