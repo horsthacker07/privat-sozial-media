@@ -8,6 +8,8 @@
 
 Flask
 Flask-SocketIO
+flask_sqlalchemy
+psycopg2-binary
 python-engineio
 python-socketio
 eventlet
