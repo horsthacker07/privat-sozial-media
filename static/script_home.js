@@ -40,17 +40,12 @@ $(document).ready(function() {
         if (message) {
             if (length > 50) {
                 alert("Die Nachricht ist zu lang! (max. 50 Zeichen)");
-            }            
-            else {
+            } else {
                 // Nachricht an den Server senden
                 socket.send(message);
                 $('#message').val('');
                 console.log("gesendet!!!");
             }
-
-            socket.send(message);
-            $('#message').val('');
-            console.log("gesendet!!!");
         }
     });
 });
