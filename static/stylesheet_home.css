@@ -97,7 +97,7 @@ hr {
 .body .main_body div[type="messages"] {
     grid-area: messages; /* Definiert den Bereich für die Nachrichten */
     display: flex; /* Flexbox für zentrierten Inhalt */
-    flex-direction: column; /* Vertikale Anordnung der Kinder */
+    flex-direction: row; /* Vertikale Anordnung der Kinder */
     justify-content: center; /* Startet den Inhalt oben */
     align-items: center; /* Richtet den Inhalt links aus */
     text-align: centre; /* Text linksbündig */
