@@ -95,6 +95,7 @@ hr {
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
+    flex-wrap: wrap;
 }
 
 #messages_new {
