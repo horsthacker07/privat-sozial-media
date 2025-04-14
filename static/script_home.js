@@ -1,5 +1,3 @@
-alert('Grrrrr');
-
 $(document).ready(function() {
     var socket = io({ transports: ['websocket'], upgrade: false });
 
