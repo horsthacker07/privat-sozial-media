@@ -12,7 +12,7 @@ $(document).ready(function() {
 
         const box1 = $('#messages_new');
 
-        const paragraphCount = box.find('p').length;
+        const paragraphCount = box1.find('p').length;
 
         // Löscht den ersten Paragraphen, wenn 10 oder mehr Paragraphen vorhanden sind
         if (paragraphCount >= 10) {
