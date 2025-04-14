@@ -91,7 +91,7 @@ hr {
     flex-direction: column; /* Vertikale Anordnung der Kinder */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
-    /*text-align: center; /* Zentriert den Text */
+    text-align: center; /* Zentriert den Text */
 }
 
 #chatForm {
@@ -100,7 +100,7 @@ hr {
 }
 
 .body .main_body input[type="text"] {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
