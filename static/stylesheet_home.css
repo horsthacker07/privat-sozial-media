@@ -94,14 +94,17 @@ hr {
     grid-area: messages; /* Definiert den Bereich für die Nachrichten */
     display: flex; /* Flexbox für zentrierten Inhalt */
     flex-direction: column; /* Vertikale Anordnung der Kinder */
-    justify-content: center; /* Zentriert den Inhalt vertikal */
-    align-items: center; /* Zentriert den Inhalt horizontal */
-    text-align: center; /* Zentriert den Text */
+    justify-content: flex-start; /* Startet den Inhalt oben */
+    align-items: flex-start; /* Richtet den Inhalt links aus */
+    text-align: left; /* Text linksbündig */
     flex-wrap: wrap;
-    max-width: 90%; /* Verhindert, dass die Breite größer wird */
+    max-width: 100%; /* Verhindert, dass die Breite größer wird */
+    max-height: 100%; /* Verhindert, dass die Höhe größer wird */
     overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
     word-wrap: break-word; /* Bricht lange Wörter um */
     overflow-wrap: break-word; /* Bricht lange Wörter um */
+    box-sizing: border-box; /* Bezieht Padding und Border in die Breite und Höhe ein */
 }
 
 #messages_new {
