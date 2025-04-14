@@ -91,7 +91,7 @@ hr {
     flex-direction: column; /* Vertikale Anordnung der Kinder */
     justify-content: center; /* Zentriert den Inhalt vertikal */
     align-items: center; /* Zentriert den Inhalt horizontal */
-    text-align: center; /* Zentriert den Text */
+    /*text-align: center; /* Zentriert den Text */
 }
 
 #chatForm {
