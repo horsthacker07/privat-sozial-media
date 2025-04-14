@@ -185,7 +185,7 @@ div {
 }
 
 .footer:hover {
-    bottom: 0px; /* Zeigt den gesamten Footer an */
+    bottom: 30px; /* Zeigt den gesamten Footer an */
 }
 
 .footer .footer-bar {
