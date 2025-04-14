@@ -55,7 +55,7 @@ hr {
 }
 
 .body .main_body {
-    flex: 1; /* nimmt den restlichen Platz zwischen Header & Footer */
+    flex-grow: 1;
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: 3fr 1fr; /* Zwei Spalten, links ist größer als rechts */
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
@@ -63,11 +63,11 @@ hr {
     "content messages"
     "links_unten messages"; /* Definiert die Bereiche */
     gap: 10px; /* Abstand zwischen den Spalten */
-    margin-bottom: 20px; /* Abstand zum Footer */
+    margin-bottom: 50px; /* Abstand zum Footer */
 }
 
 .body .main_body .Anzeige_element {
-    margin: 5px; /* Abstand um das Element */
+    margin: 10px; /* Abstand um das Element */
     border: 1px solid #00000033; /* Grauer Rahmen */
     border-radius: 10px; /* Abgerundete Ecken */
     padding: 20px; /* Innenabstand */
@@ -79,6 +79,10 @@ hr {
     word-wrap: break-word; /* Bricht lange Wörter um */
     overflow-wrap: break-word; /* Bricht lange Wörter um */
     white-space: normal; /* Erlaubt Zeilenumbrüche */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+
+
 }
 
 .body .main_body div[type="content"] {
@@ -94,21 +98,27 @@ hr {
     grid-area: messages; /* Definiert den Bereich für die Nachrichten */
     display: flex; /* Flexbox für zentrierten Inhalt */
     flex-direction: column; /* Vertikale Anordnung der Kinder */
-    justify-content: center; /* Zentriert den Inhalt vertikal */
-    align-items: center; /* Zentriert den Inhalt horizontal */
-    text-align: center; /* Zentriert den Text */
+    justify-content: center; /* Startet den Inhalt oben */
+    align-items: center; /* Richtet den Inhalt links aus */
+    text-align: centre; /* Text linksbündig */
     flex-wrap: wrap;
-    max-width: 90%; /* Verhindert, dass die Breite größer wird */
+    max-width: 100%; /* Verhindert, dass die Breite größer wird */
+    max-height: 100%; /* Verhindert, dass die Höhe größer wird */
     overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
     word-wrap: break-word; /* Bricht lange Wörter um */
     overflow-wrap: break-word; /* Bricht lange Wörter um */
+    box-sizing: border-box; /* Bezieht Padding und Border in die Breite und Höhe ein */
 }
 
 #messages_new {
-    max-width: fit-content; /* Verhindert, dass die Breite größer wird */
+    max-width: 100%; /* Verhindert, dass die Breite größer wird */
     height: 100%;
     overflow-y: auto; /* Ermöglicht vertikales Scrollen */
     margin-right: 8px;
+    word-wrap: break-word; /* Bricht lange Wörter um */
+    overflow-wrap: break-word; /* Bricht lange Wörter um */
+    white-space: normal; /* Erlaubt Zeilenumbrüche */
 }
 
 #chatForm {
