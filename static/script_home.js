@@ -38,8 +38,8 @@ $(document).ready(function() {
         const message = $('#message').val();
         length = message.length;
         if (message) {
-            if (length > 50) {
-                alert("Die Nachricht ist zu lang! (max. 50 Zeichen)");
+            if (length > 200) {
+                alert("Die Nachricht ist zu lang! (max. 200 Zeichen)");
             } else {
                 // Nachricht an den Server senden
                 socket.send(message);
