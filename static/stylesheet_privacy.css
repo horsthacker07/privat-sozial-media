@@ -44,6 +44,10 @@ body {
     margin: 3%;
 }
 
+div {
+    backdrop-filter: blur(10px); /* Weichzeichner-Effekt */
+}
+
 .body .main_body div[type="pt"] {
     grid-area: pt; /* Weist den Bereich zu */
     display: flex;
