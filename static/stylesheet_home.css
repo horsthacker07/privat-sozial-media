@@ -98,7 +98,10 @@ hr {
     align-items: center; /* Zentriert den Inhalt horizontal */
     text-align: center; /* Zentriert den Text */
     flex-wrap: wrap;
-    max-width: 100%; /* Verhindert, dass die Breite größer wird */
+    max-width: 90%; /* Verhindert, dass die Breite größer wird */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    word-wrap: break-word; /* Bricht lange Wörter um */
+    overflow-wrap: break-word; /* Bricht lange Wörter um */
 }
 
 #messages_new {
