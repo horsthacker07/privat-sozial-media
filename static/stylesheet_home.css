@@ -55,8 +55,7 @@ hr {
 }
 
 .body .main_body {
-    flex: 1; /* nimmt den restlichen Platz zwischen Header & Footer */
-    
+    flex-grow: 1; /* nimmt den restlichen Platz zwischen Header & Footer */
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: 3fr, 1fr; /* Zwei Spalten, links ist größer als rechts */
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
@@ -76,6 +75,7 @@ hr {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Innerer Schatten */
     max-width: 100%; /* Verhindert, dass die Breite größer wird */
     box-sizing: border-box; /* Bezieht Padding und Border in die Breite ein */
+    flex-wrap: wrap;
 }
 
 .body .main_body div[type="content"] {
