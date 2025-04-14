@@ -60,8 +60,8 @@ hr {
     grid-template-rows: repeat(2, 1fr); /* Zwei gleich große Zeilen */
     grid-template-areas:
     "content messages"
-    "links_unten ."; /* Definiert die Bereiche */
-    gap: 20px; /* Abstand zwischen den Spalten */
+    "links_unten messages"; /* Definiert die Bereiche */
+    gap: 10px; /* Abstand zwischen den Spalten */
  }
 
 .body .main_body .Anzeige_element {
