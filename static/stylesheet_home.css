@@ -86,8 +86,6 @@ div {
     white-space: normal; /* Erlaubt Zeilenumbrüche */
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
     overflow-y: auto; /* Ermöglicht vertikales Scrollen */
-
-
 }
 
 .body .main_body div[type="content"] {
