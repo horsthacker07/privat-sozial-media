@@ -10,8 +10,6 @@ $(document).ready(function() {
     socket.on('message', function(data) {
         console.log("Nachricht empfangen:", data);
 
-        $('#messages_new').empty();
-
         $('#messages_new').append($('<p>').text(data));
     });
 
