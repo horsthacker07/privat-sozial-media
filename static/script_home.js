@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var socket = io({ transports: ['websocket'], upgrade: false });
 
-/*
+
     socket.on('connect', function() {
         console.log("Socket connected!");
         socket.send("User connected!");
@@ -11,7 +11,7 @@ $(document).ready(function() {
         console.log("Nachricht empfangen:", data);
         $('#messages_new').append($('<p>').text(data));
     });
-*/
+
 
     // Alle bisherigen Nachrichten laden
     $.getJSON('/messages', function (messages) {
@@ -20,16 +20,6 @@ $(document).ready(function() {
             box.append($('<p>').text(msg));
         });
         //nope       box.scrollTop(box[0].scrollHeight); // ganz nach unten scrollen
-    });
-
-    socket.on('connect', function () {
-        console.log("Socket connected!");
-    });
-
-    socket.on('message', function (data) {
-        const box = $('#messages_new');
-        box.append($('<p>').text(data));
-        //nope      box.scrollTop(box[0].scrollHeight);
     });
 
 
