@@ -124,7 +124,7 @@ div {
     word-wrap: break-word; /* Bricht lange Wörter um */
     overflow-wrap: break-word; /* Bricht lange Wörter um */
     white-space: normal; /* Erlaubt Zeilenumbrüche */
-    backdrop-filter: 0px; /* Entfernt den Weichzeichner-Effekt */
+    backdrop-filter: none; /* Entfernt den Weichzeichner-Effekt */
 }
 
 #chatForm {
