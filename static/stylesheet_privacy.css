@@ -21,13 +21,13 @@ body {
     color: white; /* Weißer Text */
     padding: 10px 20px; /* Innenabstand */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+    height: 55px; /* Höhe der Navbar */
 }
 
 .body .navbar h1[type="navbar-title"] {
     position: absolute;
     left: 50%; /* Positioniert die Mitte des Titels */
     transform: translateX(-50%); /* Verschiebt den Titel um die Hälfte seiner Breite */
-    margin: 10px;
     font-size: 24px; /* Schriftgröße für die Überschrift */
 }
 
