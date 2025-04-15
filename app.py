@@ -12,14 +12,28 @@ DATABASE_URL = os.environ.get('DATABASE_URL')  # Datenbank-URL aus Umgebungsvari
 
 ### Database- und Routen-Setup für messages ###
 
-messages_db = []  # Database für Nachrichten
+def get_db_connection():
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+    return conn
+
 
 @app.route('/messages')
 def get_messages():
     if not session.get('logged_in'):
         print("Unauthorized access attempt to /messages")
         return 'not allowed !!!!!!', 403
-    return jsonify(messages_db)
+    
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('SELECT content FROM messages_db ORDER BY created_at DESC LIMIT 10;')
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+
+    messages = [row[0] for row in rows][::-1]  # Umkehren für chronologische Reihenfolge
+
+    return jsonify(messages)
+
 
 ### SocketIO-Setup für messages ###
 
@@ -30,13 +44,14 @@ def handle_message(message):
     print("Received message: " + message)
 
     if message != "User connected!":
+        conn = get_db_connection()
+        cur = conn.cursor()
+        cur.execute('INSERT INTO messages_db (content) VALUES (%s);', (message,))
+        conn.commit()
+        cur.close()
+        conn.close()
+        print("Message saved to database.")
 
-        if len(messages_db) >= 10:
-            messages_db.pop(0)  # Entferne die älteste Nachricht (erste in der Liste)
-
-        messages_db.append(message)
-
-        #socketio.emit('update_messages', messages_db, broadcast=True)
         send(message, broadcast=True)
 
 
