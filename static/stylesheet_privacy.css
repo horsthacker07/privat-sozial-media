@@ -37,9 +37,9 @@ body {
     grid-template-rows: repeat(4, 1fr); /* Vier gleich große Zeilen */
     grid-template-areas:
     "pt pt"
-    "cds td"
-    "ur nc"
-    "c c"; /* Definiert die Bereiche */
+    "cds ur"
+    "edh nc"
+    "td c";
     gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
     margin: 3%;
 }
@@ -76,6 +76,18 @@ div {
 
 .body .main_body div[type="cds"] {
     grid-area: cds; /* Weist den Bereich zu */
+    display: flex;
+    flex-direction: column;
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    font-size: 16px; /* Schriftgröße */
+    background-color: #56616125; /* Grüner Hintergrund */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+}
+
+.body .main_body div[type="edh"] {
+    grid-area: edh; /* Weist den Bereich zu */
     display: flex;
     flex-direction: column;
     color: white; /* Weißer Text */
