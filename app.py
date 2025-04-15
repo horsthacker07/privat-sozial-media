@@ -2,6 +2,9 @@ from flask import Flask, render_template, jsonify, request, redirect, url_for, s
 from flask_socketio import SocketIO, send
 import os
 import psycopg2
+import ssl
+
+print(ssl.OPENSSL_VERSION)
 
 app = Flask(__name__)
 app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
@@ -13,7 +16,7 @@ DATABASE_URL = os.environ.get('DATABASE_URL')  # Datenbank-URL aus Umgebungsvari
 ### Database- und Routen-Setup für messages ###
 
 def get_db_connection():
-    conn = psycopg2.connect(DATABASE_URL)
+    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     return conn
 
 
