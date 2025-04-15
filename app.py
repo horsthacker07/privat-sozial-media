@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.secret_key = "the_secret_key"  # Muss für Sessions gesetzt sein
 
 APP_PASSWORD = os.environ.get('APP_PASSWORD')  # Passwort aus Umgebungsvariablen lesen
+DATABASE_URL = os.environ.get('DATABASE_URL')  # Datenbank-URL aus Umgebungsvariablen lesen
 
 
 ### Database- und Routen-Setup für messages ###
