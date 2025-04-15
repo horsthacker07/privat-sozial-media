@@ -13,7 +13,7 @@ DATABASE_URL = os.environ.get('DATABASE_URL')  # Datenbank-URL aus Umgebungsvari
 ### Database- und Routen-Setup für messages ###
 
 def get_db_connection():
-    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+    conn = psycopg2.connect(DATABASE_URL)
     return conn
 
 
