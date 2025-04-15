@@ -23,11 +23,12 @@
     
     .main_body {
         display: grid; /* Verwenden von Grid für Layout */
-        grid-template-columns: 1fr; /* Zwei gleich große Spalten */
-        grid-template-rows: repeat(6, 1fr); /* Vier gleich große Zeilen */
+        grid-template-columns: 1fr; /* Eine Spalte */
+        grid-template-rows: repeat(6, 1fr); /* Sieben Zeilen */
         grid-template-areas:
         "pt"
         "cds"
+        "edh"
         "td"
         "ur" 
         "nc"
@@ -68,6 +69,18 @@
     
     .body .main_body div[type="cds"] {
         grid-area: cds; /* Weist den Bereich zu */
+        display: flex;
+        flex-direction: column;
+        color: white; /* Weißer Text */
+        padding: 20px; /* Innenabstand */
+        border-radius: 10px; /* Abgerundete Ecken */
+        font-size: 16px; /* Schriftgröße */
+        background-color: #56616125; /* Grüner Hintergrund */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
+    }
+
+    .body .main_body div[type="edh"] {
+        grid-area: edh; /* Weist den Bereich zu */
         display: flex;
         flex-direction: column;
         color: white; /* Weißer Text */
