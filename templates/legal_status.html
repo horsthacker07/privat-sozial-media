@@ -60,13 +60,11 @@
 
     <h2>📦 Hosting & Technical Details</h2>
     <ul>
-        <li>Hosted via <strong>Render</strong>, with passwords stored in <code>Environment Variables</code>.</li>
-        <li><strong>Supabase</strong> is used as the service platform for database storage.</li>
-        <li> -> Access to the Supabase database is restricted via API keys and role-based permissions.</li>
-        <li> -> Supabase data is stored in the EU (Frankfurt), ensuring DSGVO compliance.</li>
-        <li> -> The database rules prevent public read or write access.unless authorized via server-side logic.</li>
-        <li>      -> Access is only possible via authorized server-side logic.</li>
-        <li>           -> Needed secret API-key and password is stored in <code>Environment Variables</code>.</li>
+        <li>Hosted via <strong>Render</strong>, with sensitive credentials (e.g., secret API keys, passwords) stored in <code>Environment Variables</code>.</li>
+        <li><strong>Supabase</strong> is used as the database backend.</li>
+        <li>-- ✅ Access is strictly limited via API keys and role-based permissions.</li>
+        <li>-- ✅ Data is stored in the EU (Frankfurt), ensuring GDPR (DSGVO) compliance.</li>
+        <li>-- ✅ Public access is disabled; database queries are only possible through authorized server-side logic.</li>
         <li>Login uses <strong>server-side session management</strong>, not modifiable via client-side access.</li>
         <li>The source code is public, but <strong>the application is password-restricted and not openly usable</strong>.</li>
     </ul>
