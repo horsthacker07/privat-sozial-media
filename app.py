@@ -98,8 +98,11 @@ def legal_status():
 
 @app.route("/dns-check")
 def dns_check():
+    if not session.get('logged_in'):
+        print("Unauthorized access attempt to /messages")
+        return 'not allowed !!!!!!', 403
     try:
-        ip = socket.gethostbyname("db.rvjnpbsfvaypwkcxjhnl.supabase.co")
+        ip = socket.gethostbyname("aws-0-eu-central-1.pooler.supabase.com")
         return f"DNS OK: {ip}"
     except Exception as e:
         return f"DNS error: {e}"
