@@ -3,6 +3,7 @@ from flask_socketio import SocketIO, send
 import os
 import psycopg2
 import ssl
+import socket
 
 print(ssl.OPENSSL_VERSION)
 
@@ -92,6 +93,17 @@ def privacy():
 @app.route('/legal_status')
 def legal_status():
     return render_template('legal_status.html')
+
+
+
+@app.route("/dns-check")
+def dns_check():
+    try:
+        ip = socket.gethostbyname("db.rvjnpbsfvaypwkcxjhnl.supabase.co")
+        return f"DNS OK: {ip}"
+    except Exception as e:
+        return f"DNS error: {e}"
+
 
 
 if __name__ == '__main__':
