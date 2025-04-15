@@ -48,14 +48,30 @@ def handle_message(message):
     print("Received message: " + message)
 
     if message != "User connected!":
+        # Verbindung zur Datenbank herstellen
         conn = get_db_connection()
         cur = conn.cursor()
+
+        # Neue Nachricht in die Datenbank einfügen
         cur.execute('INSERT INTO messages_db (content) VALUES (%s);', (message,))
         conn.commit()
+        
+        # Sicherstellen, dass nur 10 Nachrichten in der DB sind
+        cur.execute('SELECT COUNT(*) FROM messages_db;')
+        count = cur.fetchone()[0]
+
+        if count > 10:
+            # Lösche die älteste Nachricht (erste Nachricht basierend auf `created_at`)
+            cur.execute('DELETE FROM messages_db WHERE created_at = (SELECT MIN(created_at) FROM messages_db);')
+            conn.commit()
+
+        # Verbindung schließen
         cur.close()
         conn.close()
+
         print("Message saved to database.")
 
+        # Nachricht an alle Clients senden
         send(message, broadcast=True)
 
 
