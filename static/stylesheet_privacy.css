@@ -34,7 +34,8 @@ body {
 .main_body {
     display: grid; /* Verwenden von Grid für Layout */
     grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
-    grid-template-rows: repeat(4, 1fr); /* Vier gleich große Zeilen */
+    grid-template-rows: 0.7fr 1fr 1fr 1fr;
+    /*grid-template-rows: repeat(4, 1fr); /* Vier gleich große Zeilen */
     grid-template-areas:
     "pt pt"
     "cds ur"
