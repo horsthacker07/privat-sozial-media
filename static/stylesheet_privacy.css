@@ -163,7 +163,7 @@ div {
 .footer {
     position: fixed; /* Fixiert den Footer am unteren Rand */
     left: 0;
-    bottom: -220px; /* Versteckt den Footer bis auf eine kleine Leiste */
+    bottom: -210px; /* Versteckt den Footer bis auf eine kleine Leiste */
     width: 100%; /* Nimmt die gesamte Breite ein */
     height: 220px; /* Gesamthöhe des Footers */
     background-color: #566161; /* Hintergrundfarbe für den Footer */

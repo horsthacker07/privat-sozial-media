@@ -106,6 +106,10 @@ def logout():
 def privacy():
     return render_template('privacy.html')
 
+@app.route('/website_disclaimer')
+def website_disclaimer():
+    return render_template('website_disclaimer.html')
+
 @app.route('/legal_status')
 def legal_status():
     return render_template('legal_status.html')
